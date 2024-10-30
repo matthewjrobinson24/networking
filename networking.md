@@ -18,7 +18,7 @@ Enter the Filter syntax with no spaces
 
    Keep your values in all the same format. HEX or Decimal. Do not mix.
 
-    tcpdump -n "" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
+    sudo tcpdump -n "ip[8]<=64||ip6[7]<=64" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
 ____________________________________________________________________________________________________________________
 
 
