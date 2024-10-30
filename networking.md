@@ -21,7 +21,7 @@ ________________________________________________________________________________
 
 $ sudo tcpdump -n "```ip[8]<=64||ip6[7]<=64```" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
 ____________________________________________________________________________________________________________________
-## 
+## What is the Berkeley Packet Filter, using tcpdump, to capture all IPv4 packets with at least the Dont Fragment bit set? There should be 2321 packets.
 
 $ sudo tcpdump -n "```ip[6]&0x40!=0```" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
 ____________________________________________________________________________________________________________________
