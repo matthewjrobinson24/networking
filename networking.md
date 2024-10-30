@@ -39,7 +39,7 @@ $ sudo tcpdump -n "```tcp[13]=0x14||tcp[13]=0x11```" -r /home/activity_resources
 ____________________________________________________________________________________________________________________
 ## What is the Berkeley Packet Filter, using tcpdump, to capture all packets with an IP ID field of 213? There should be 10 packets.
 
-$ sudo tcpdump -n "``````" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
+$ sudo tcpdump -n "```ip[4:2]=213```" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
 ____________________________________________________________________________________________________________________
 ## What is the Berkeley Packet Filter, using tcpdump, to capture all traffic that contains a VLAN tag? There should be 182 packets.
 
