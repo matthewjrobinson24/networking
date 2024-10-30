@@ -51,7 +51,7 @@ $ sudo tcpdump -n "```ether[12:2]=0x8100```" -r /home/activity_resources/pcaps/B
 ____________________________________________________________________________________________________________________
 ## What is the Berkeley Packet Filter, using tcpdump, to capture all IPv4 packets relating to DNS? There should be 63 packets.
 
-$ sudo tcpdump -n "``````" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
+$ sudo tcpdump -n "```tcp[0:2]=53||tcp[2:2]=53||udp[0:2]=53||udp[2:2]=53```" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
 ____________________________________________________________________________________________________________________
 ## What is the Berkeley Packet Filter, using tcpdump, to capture the initial packets from a client trying to initiate a TCP connection? There should be 3447 packets.
 
