@@ -12,13 +12,13 @@ What is the Berkeley Packet Filter, using tcpdump, to capture all packets with a
 
 Enter the Filter syntax with no spaces
 
-   CTFD will only accept BPF filters, &&, and || as answers with no spaces.
+- CTFD will only accept BPF filters, &&, and || as answers with no spaces.
 
-   CTFD will not accept TCPdump Primitives as answers.
+- CTFD will not accept TCPdump Primitives as answers.
 
-   Keep your values in all the same format. HEX or Decimal. Do not mix.
+- Keep your values in all the same format. HEX or Decimal. Do not mix.
 
-- sudo tcpdump -n "```ip[8]<=64||ip6[7]<=64```" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
+-- sudo tcpdump -n "```ip[8]<=64||ip6[7]<=64```" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
 ____________________________________________________________________________________________________________________
 
 
