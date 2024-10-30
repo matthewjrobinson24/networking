@@ -59,7 +59,7 @@ $ sudo tcpdump -n "```tcp[13]=0x02```" -r /home/activity_resources/pcaps/BPFChec
 ____________________________________________________________________________________________________________________
 ## What is the Berkeley Packet Filter, using tcpdump, to capture the response packets from a server listening on an open TCP ports? There should be 277 packets.
 
-$ sudo tcpdump -n "``````" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
+$ sudo tcpdump -n "```tcp[13]=0x12```" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
 ____________________________________________________________________________________________________________________
 ## What is the Berkeley Packet Filter, using tcpdump, to capture the response packets from a server with closed TCP ports There should be 17 packets.
 
