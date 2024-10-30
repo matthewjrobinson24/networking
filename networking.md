@@ -25,9 +25,9 @@ ________________________________________________________________________________
 
 $ sudo tcpdump -n "```ip[6]&0x40!=0```" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
 ____________________________________________________________________________________________________________________
-## 
+## What is the Berkeley Packet Filter, using tcpdump, to capture traffic with a Source Port higher than 1024, utilizing the correct Transport Layer Headers? There should be 7805 packets.
 
-$ sudo tcpdump -n "``````" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
+$ sudo tcpdump -n "```tcp[0:2]>1024||udp[0:2]>1024```" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
 ____________________________________________________________________________________________________________________
 ## 
 
