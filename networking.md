@@ -71,11 +71,11 @@ $ sudo tcpdump -n "```tcp[2:2]<1024||udp[2:2]<1024```" -r /home/activity_resourc
 ____________________________________________________________________________________________________________________
 ## What is the Berkeley Packet Filter, using tcpdump, to capture all HTTP traffic? There should be 1404 packets.
 
-$ sudo tcpdump -n "``````" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
+$ sudo tcpdump -n "```tcp[0:2]=80||tcp[2:2]=80```" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
 ____________________________________________________________________________________________________________________
 ## What is the Berkeley Packet Filter, using tcpdump, to capture all telnet traffic? There should be 62 packets.
 
-$ sudo tcpdump -n "``````" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
+$ sudo tcpdump -n "```tcp[0:2]=23||tcp[2:2]=23```" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
 ____________________________________________________________________________________________________________________
 ## What is the Berkeley Packet Filter, using tcpdump, to capture all ARP traffic? There should be 40 packets.
 
