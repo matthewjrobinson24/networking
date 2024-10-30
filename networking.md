@@ -1,13 +1,15 @@
+# Student Guide and IP to connect through VPN for Challenges.
+    
     https://net.cybbh.io/public/networking/latest/index.html
 
     10.50.23.214:8000
-____________________________________________________________________________________________________________________
-    https://net.cybbh.io/-/public/-/jobs/878264/artifacts/modules/networking/slides-v4/01_data.html
 ____________________________________________________________________________________________________________________
 # Vital for these CTF's use it to match the syntax's below to see which Header to use.
 
     https://miro.com/app/board/o9J_klSqCSY=/
 ____________________________________________________________________________________________________________________
+# Finding Networks/Subnets.
+    
     duckduckgo
 ____________________________________________________________________________________________________________________
 # Networking - 1 - Fundamentals - Task 3 - Basic Analysis
