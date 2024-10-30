@@ -67,7 +67,7 @@ $ sudo tcpdump -n "```tcp[13]=0x04```" -r /home/activity_resources/pcaps/BPFChec
 ____________________________________________________________________________________________________________________
 ## What is the Berkeley Packet Filter, using tcpdump, to capture all TCP and UDP packets sent to the well known ports? There should be 3678 packets.
 
-$ sudo tcpdump -n "``````" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
+$ sudo tcpdump -n "```tcp[2:2]<1024||udp[2:2]<1024```" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
 ____________________________________________________________________________________________________________________
 ## What is the Berkeley Packet Filter, using tcpdump, to capture all HTTP traffic? There should be 1404 packets.
 
