@@ -72,7 +72,7 @@ ________________________________________________________________________________
 
 ## chmod +x datagramrecv.py
 ______________________________________________________________________________________________________
-# .py
+# header.py
     
     #!/usr/bin/python3
     # For building the socket
@@ -140,8 +140,7 @@ ________________________________________________________________________________
     # socket.send is a low-level method and basically just the C/syscall method send(3) / send(2). It can send less bytes than you requested, but returns the number of bytes sent.
     # socket.sendall is a high-level Python-only method that sends the entire buffer you pass or throws an exception. It does that by calling socket.send until everything has been sent or an error occurs.
 
-## chmod +x .py
-
+## chmod +x header.py
 ______________________________________________________________________________________________________
 
 
