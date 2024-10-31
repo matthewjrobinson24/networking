@@ -74,7 +74,7 @@ ________________________________________________________________________________
 
 ## chmod +x datagramrecv.py
 ______________________________________________________________________________________________________
-# header.py
+# ipraw.py
     
     #!/usr/bin/python3
     # For building the socket
@@ -104,19 +104,19 @@ ________________________________________________________________________________
     #######################
     # Lets add the IPv4 header information
     # This is normally 0x45 or 69 for Version and Internet Header Length
-    ip_ver_ihl =
+    ip_ver_ihl = 0
     # This combines the DSCP and ECN feilds.  Type of service/QoS
-    ip_tos =
+    ip_tos = 0
     # The kernel will fill in the actually length of the packet
     ip_len = 0
     # This sets the IP Identification for the packet. 1-65535
-    ip_id =
+    ip_id = 0
     # This sets the RES/DF/MF flags and fragmentation offset
-    ip_frag =
+    ip_frag = 0
     # This determines the TTL of the packet when leaving the machine. 1-255
-    ip_ttl =
+    ip_ttl = 0
     # This sets the IP protocol to 16 (CHAOS) (reference IANA) Any other protocol it will expect additional headers to be created.
-    ip_proto =
+    ip_proto = 0
     # The kernel will fill in the checksum for the packet
     ip_check = 0
     # inet_aton(string) will convert an IP address to a 32 bit binary number
@@ -142,9 +142,9 @@ ________________________________________________________________________________
     # socket.send is a low-level method and basically just the C/syscall method send(3) / send(2). It can send less bytes than you requested, but returns the number of bytes sent.
     # socket.sendall is a high-level Python-only method that sends the entire buffer you pass or throws an exception. It does that by calling socket.send until everything has been sent or an error occurs.
 
-## chmod +x header.py
+## chmod +x ipraw.py
 ______________________________________________________________________________________________________
-# vim tcpheader.py
+# vim tcpraw.py
 
     #!/usr/bin/python3
     # For building the socket
@@ -176,19 +176,19 @@ ________________________________________________________________________________
     #######################
     # Lets add the IPv4 header information
     # This is normally 0x45 or 69 for Version and Internet Header Length
-    ip_ver_ihl =
+    ip_ver_ihl = 0
     # This combines the DSCP and ECN feilds.  Type of service/QoS
-    ip_tos =
+    ip_tos = 0
     # The kernel will fill in the actually length of the packet
     ip_len = 0
     # This sets the IP Identification for the packet. 1-65535
-    ip_id =
+    ip_id = 0
     # This sets the RES/DF/MF flags and fragmentation offset
-    ip_frag =
+    ip_frag = 0
     # This determines the TTL of the packet when leaving the machine. 1-255
-    ip_ttl =
+    ip_ttl = 0
     # This sets the IP protocol to 16 (CHAOS) (reference IANA) Any other protocol it will expect additional headers to be created.
-    ip_proto =
+    ip_proto = 0
     # The kernel will fill in the checksum for the packet
     ip_check = 0
     # inet_aton(string) will convert an IP address to a 32 bit binary number
@@ -307,7 +307,7 @@ ________________________________________________________________________________
     # socket.send is a low-level method and basically just the C/syscall method send(3) / send(2). It can send fewer bytes than you requested, but returns the number of bytes sent.
     #socket.sendall ﻿is a high-level Python-only method that sends the entire buffer you pass or throws an exception. It does that by calling socket.send ﻿ until everything has been sent or an error occurs.
 
-## chmod +x tcpheader.py
+## chmod +x tcpraw.py
 ______________________________________________________________________________________________________
 
 
