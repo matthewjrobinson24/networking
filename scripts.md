@@ -1,6 +1,6 @@
     https://net.cybbh.io/public/networking/latest/12_programming/fg.html
 ______________________________________________________________________________________________________
-# vim stream.py
+    vim stream.py
 
     #!/usr/bin/python3
     import socket
@@ -14,7 +14,7 @@ ________________________________________________________________________________
     print(data.decode('utf-8'))
     s.close()
     
-## chmod +x stream.py
+    hmod +x stream.py
 ______________________________________________________________________________________________________
 # vim streamrecv.py
 
