@@ -1,3 +1,5 @@
+    https://net.cybbh.io/public/networking/latest/12_programming/fg.html
+______________________________________________________________________________________________________
 # vim stream.py
 
     #!/usr/bin/python3
