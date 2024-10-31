@@ -107,9 +107,5 @@ $ sudo tcpdump -n "```tcp[13]=0&&ip[16:4]=0x0a0a0a0a```" -r /home/activity_resou
 ____________________________________________________________________________________________________________________
 ## What is the Berkeley Packet Filter, using tcpdump, to capture an attacker using vlan hopping to move from vlan 1 to vlan 10? There should be 15 packets.
 
-$ sudo tcpdump -n "``````" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
-____________________________________________________________________________________________________________________
-##  
-
-$ sudo tcpdump -n "``````" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
+$ sudo tcpdump -n "```ether[12:4]&0xFFFF0FFF=0x81000001&&ether[16:4]&0xFFFF0FFF=0x8100000a```" -r /home/activity_resources/pcaps/BPFCheck.pcap | wc -l
 ____________________________________________________________________________________________________________________
