@@ -97,9 +97,9 @@ ________________________________________________________________________________
     src_ip = "127.0.0.1" 
     dst_ip = "127.0.0.1" 
     
-    ##################
+    #######################
     ##Build Packet Header##
-    ##################
+    #######################
     # Lets add the IPv4 header information
     # This is normally 0x45 or 69 for Version and Internet Header Length
     ip_ver_ihl =
@@ -121,15 +121,15 @@ ________________________________________________________________________________
     ip_srcadd = socket.inet_aton(src_ip)
     ip_dstadd = socket.inet_aton(dst_ip)
     
-    #################
+    ########################
     ## Pack the IP Header ##
-    #################
+    ########################
     # This portion creates the header by packing the above variables into a structure. The ! in the string means 'Big-Endian' network order, while the code following specifies how to store the info. Endian explained. Refer to link for character meaning.
     ip_header = pack('!BBHHHBBH4s4s' , ip_ver_ihl, ip_tos, ip_len, ip_id, ip_frag, ip_ttl, ip_proto, ip_check, ip_srcadd, ip_dstadd)
 
-    ##########
+    ###########
     ##Message##
-    ##########
+    ###########
     # Your custom protocol fields or data. We are going to just insert data here. Add your message where the "?" is. Ensure you obfuscate it though...don't want any clear text messages being spotted! You can encode with various data encodings. Base64, binascii
     message = b'last_name'                  #This should be the student's last name per the prompt
     hidden_msg = binascii.hexlify(message)  #Students can choose which encodeing they want to use.
