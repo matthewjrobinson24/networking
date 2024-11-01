@@ -8,11 +8,11 @@ ________________________________________________________________________________
 
 - nmap -sV -Pn -T4 [IP]
 
-        ;)
+        tbd
 
 - sudo traceroute [IP] -p [port]
 
-        ;)
+        tbd
 
 - nc [Options] [Target IP] [Target Port(s)]
 
