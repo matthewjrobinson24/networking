@@ -1,3 +1,5 @@
+    https://net.cybbh.io/-/public/-/jobs/878264/artifacts/modules/networking/slides-v4/12_programming.html
+______________________________________________________________________________________________________
     https://net.cybbh.io/public/networking/latest/12_programming/fg.html
 ______________________________________________________________________________________________________
 # vim stream.py
