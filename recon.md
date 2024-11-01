@@ -34,7 +34,7 @@ ________________________________________________________________________________
             nc -nvzw1 $net.$i $ports 2>&1 | grep -E 'succ|open'
         done
 
-  - Netcat UDP scan script
+- Netcat UDP scan script
  
         #!/bin/bash
         echo "Enter network address (e.g. 192.168.0): "
