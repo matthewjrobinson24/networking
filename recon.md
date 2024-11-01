@@ -6,17 +6,17 @@ ________________________________________________________________________________
   
         for i in {1..254}; do (ping -c 1 172.16.82.$i | grep "bytes from" &) ; done
 
-- nmap -sV -Pn -T4 <IP>
+- nmap -sV -Pn -T4 [IP]
 
         
 
-- sudo traceroute <IP> -p <port>
+- sudo traceroute [IP] -p [port]
 
         
 
 - nc [Options] [Target IP] [Target Port(s)]
 
-        nc -zvnw1 <IP> <port>
+        nc -zvnw1 [IP] [port]
 _________________________________________________________________________________________________________________
 
 
