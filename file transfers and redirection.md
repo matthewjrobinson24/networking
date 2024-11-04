@@ -1,5 +1,9 @@
     https://net.cybbh.io/-/public/-/jobs/878264/artifacts/modules/networking/slides-v4/09_file_transfer.html
 ______________________________________________________________________________________________________________________
+# |
+# |
+# |
+# |
 # SCP Syntax
 ## Download a file from a remote directory to a local directory
     $ scp student@172.16.82.106:secretstuff.txt /home/student
@@ -34,11 +38,38 @@ ________________________________________________________________________________
 ## Upload a file to a remote directory from a local directory
     $ proxychains scp secretstuff.txt student@localhost:
 ______________________________________________________________________________________________________________________
-
+# |
+# |
+# |
+# |
+# NETCAT: Client to Listener file transfer
+## Listener (receive file):
+    nc -lvp 9001 > newfile.txt
+## Client (sends file):
+    nc 172.16.82.106 9001 < file.txt
+# NETCAT: Listener to Client file transfer
+## Listener (sends file):
+    nc -lvp 9001 < file.txt
+## Client (receive file):
+    nc 172.16.82.106 9001 > newfile.txt
 ______________________________________________________________________________________________________________________
-
+# NETCAT Relay Demos > Listener - Listener
+## On Blue_Host-1 Relay:
+    $ mknod mypipe p
+    $ nc -lvp 1111 < mypipe | nc -lvp 3333 > mypipe
+## On Internet_Host (send):
+    $ nc 172.16.82.106 1111 < secret.txt
+## On Blue_Priv_Host-1 (receive):
+    $ nc 192.168.1.1 3333 > newsecret.txt
 ______________________________________________________________________________________________________________________
-
+# NETCAT Relay Demos > Client - Client
+## On Internet_Host (send):
+    $ nc -lvp 1111 < secret.txt
+## On Blue_Priv_Host-1 (receive):
+    $ nc -lvp 3333 > newsecret.txt
+## On Blue_Host-1 Relay:
+    $ mknod mypipe p
+    $ nc 10.10.0.40 1111 < mypipe | nc 192.168.1.10 3333 > mypipe
 ______________________________________________________________________________________________________________________
 
 ______________________________________________________________________________________________________________________
