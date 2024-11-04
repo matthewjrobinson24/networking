@@ -7,7 +7,6 @@ ________________________________________________________________________________
     $ scp secretstuff.txt student@172.16.82.106:/home/student
 ## Copy a file from a remote host to a separate remote host
     $ scp -3 student@172.16.82.106:/home/student/secretstuff.txt student@172.16.82.112:/home/student
-    password:    password:
 ## Recursive upload of a folder to remote
     $ scp -r folder/ student@172.16.82.106:
 ## Recursive download of a folder from remote
