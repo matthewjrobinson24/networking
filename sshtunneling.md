@@ -35,10 +35,12 @@ Local Port Forward: LPF
 _________________________________________________________________________________________________________________
 ProxyChains: PC
 
-        $ proxychains nmap -T4 -vvvv -p21-23,80 [ip] -Pn
-        $ proxychains ftp 127.0.0.1
         $ proxychains wget -r ftp://127.0.0.1
+        
+        $ proxychains ftp 127.0.0.1
         $ ftp> passive
+
+        $ proxychains nmap -T4 -vvvv -p21-23,80 [ip] -Pn
 _________________________________________________________________________________________________________________
 Remote Port Forward: RPF
         
