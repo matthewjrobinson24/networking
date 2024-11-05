@@ -3,16 +3,16 @@ ________________________________________________________________________________
 # Keep Map Updated
 port -> host -> port
 _________________________________________________________________________________________________________________
-Local Port Forward:
+Local Port Forward: LPF
 
         $ ssh [user]@[hostip] -L [lowbindport]:[targetip]:[targetport] -NT
 _________________________________________________________________________________________________________________
-Banner Grab: 
+Banner Grab: BG
 
         $ nc 127.0.0.1 [port]
         $ wget -r 127.0.0.1 [port]
 _________________________________________________________________________________________________________________
-Host Enumeration:
+Host Enumeration: HE
 
 - ip addr
 - ip neighbor
@@ -23,23 +23,23 @@ Host Enumeration:
 
         $ for i in {1..254}; do (ping -c 1 [First.3.octets].$i | grep "bytes from" &) ; done
 _________________________________________________________________________________________________________________
-Dynamic Port Forward:
+Dynamic Port Forward: DPF
 
         $ ssh [user]@[hostip] -D 9050 -NT
 _________________________________________________________________________________________________________________
-ProxyChains: 
+ProxyChains: PC
 
         $ proxychains nmap -T4 -vvvv -p21-23,80 [ip] -Pn
         $ proxychains ftp 127.0.0.1
         $ proxychains wget -r ftp://127.0.0.1
         $ ftp> passive
 _________________________________________________________________________________________________________________
-Remote Port Forward: 
+Remote Port Forward: RPF
         
         $ ssh [user]@[hostip] -R [highbindport]:[targetip]:[targetport] -NT
         $ ssh [user]@[hostip] -L [lowbindport]:[targetip]:[highbindport] -NT
 _________________________________________________________________________________________________________________
-SSH Masquerade: 
+SSH Masquerade: SSHM
 
         $ ssh [user]@[hostip] -p [port]
 _________________________________________________________________________________________________________________
