@@ -7,15 +7,17 @@ Local Port Forward: LPF
 
         $ ssh [user]@[hostip] -L 5C#00:[targetip]:[targetport] -NT
 _________________________________________________________________________________________________________________
+Scanning: S
+
+- nmap scan
+
+        $ nmap -T4 -vvvv -p21-23,80 [ip]
+
 Banner Grab: BG
 
         $ nc 127.0.0.1 [port]
         $ wget -r 127.0.0.1:[port]
 _________________________________________________________________________________________________________________
-- nmap scan
-
-        $ nmap -T4 -vvvv -p21-23,80 [ip]
-
 Host Enumeration: HE
 
 - ip addr
