@@ -22,6 +22,9 @@ Host Enumeration: HE
 - ping-sweep
 
         $ for i in {1..254}; do (ping -c 1 [First.3.octets].$i | grep "bytes from" &) ; done
+- nmap scan
+
+        $ nmap -T4 -vvvv -p21-23,80 [ip]
 _________________________________________________________________________________________________________________
 Dynamic Port Forward: DPF
 
