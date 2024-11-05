@@ -41,6 +41,8 @@ ________________________________________________________________________________
 #### |
 #### |
 #### |
+Use the below for ftp/scp/http:
+
 Dynamic Port Forward: DPF
 
         $ ssh [user]@[hostip] -D 9050 -NT
