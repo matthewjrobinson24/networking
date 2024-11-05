@@ -5,7 +5,7 @@ port -> host -> port
 _________________________________________________________________________________________________________________
 Local Port Forward: LPF
 
-        $ ssh [user]@[hostip] -L [lowbindport]:[targetip]:[targetport] -NT
+        $ ssh [user]@[hostip] -L 5C#00:[targetip]:[targetport] -NT
 _________________________________________________________________________________________________________________
 Banner Grab: BG
 
@@ -36,8 +36,8 @@ ProxyChains: PC
 _________________________________________________________________________________________________________________
 Remote Port Forward: RPF
         
-        $ ssh [user]@[hostip] -R [highbindport]:[targetip]:[targetport] -NT
-        $ ssh [user]@[hostip] -L [lowbindport]:[targetip]:[highbindport] -NT
+        $ ssh [user]@[hostip] -R 5C#99:[targetip]:[targetport] -NT
+        $ ssh [user]@[hostip] -L 5C#00:[targetip]:5C#99 -NT
 _________________________________________________________________________________________________________________
 SSH Masquerade: SSHM
 
