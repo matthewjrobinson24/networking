@@ -68,11 +68,11 @@ ________________________________________________________________________________
 # 1: 
 internet_host$ telnet {T4_float_ip} 
 
-               telnet 10.50.29.131
+    telnet 10.50.29.131
 
-    User: net5_student12
+User: net5_student12
 
-    Pass: password12
+Pass: password12
 _________________________________________________________________________________________________________________ 
 pineland$ ssh netX_studentX@{T3_inside_ip} -R NssXX:localhost:22 -NT
 
