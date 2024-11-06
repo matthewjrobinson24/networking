@@ -65,8 +65,7 @@ ________________________________________________________________________________
 #### |
 #### |
 #### |
-# 1: 
-internet_host$ telnet {T4_float_ip} 
+# 1: internet_host$ telnet {T4_float_ip} 
 
     telnet 10.50.29.131
 
@@ -78,28 +77,23 @@ pineland$ ssh netX_studentX@{T3_inside_ip} -R NssXX:localhost:22 -NT
 
     ssh net5_student12@10.3.0.10 -R  51299:127.0.0.1:22 -NT
 _________________________________________________________________________________________________________________
-# 2: 
-internet_host$ ssh netX_studentX@{T3_float_ip} -L NssXX:localhost:NssXX -NT
+# 2: internet_host$ ssh netX_studentX@{T3_float_ip} -L NssXX:localhost:NssXX -NT
 
     ssh net5_student12@10.50.27.164 -L 51200:127.0.0.1:51299 -NT
 _________________________________________________________________________________________________________________
-# 3: 
-internet_host$ ssh netX_studentX@localhost -p NssXX -L NssXX:10.2.0.2:80 -NT
+# 3: internet_host$ ssh netX_studentX@localhost -p NssXX -L NssXX:10.2.0.2:80 -NT
 
     ssh net5_student12@127.0.0.1 -p 51200 -L 51201:10.2.0.2:80 -NT
 _________________________________________________________________________________________________________________
-# 4: 
-internet_host$ nc localhost port
+# 4: internet_host$ nc localhost port
 
     nc 127.0.0.1 51201
 _________________________________________________________________________________________________________________
-# 5: 
-internet_host$ wget -r localhost:port
+# 5: internet_host$ wget -r localhost:port
 
     wget -r 127.0.0.1:51201
 _________________________________________________________________________________________________________________
-# 6: 
-internet_host$ cat localhost\:port/index.html
+# 6: internet_host$ cat localhost\:port/index.html
 
     cat 127.0.0.1\:51201/index.html
 _________________________________________________________________________________________________________________
