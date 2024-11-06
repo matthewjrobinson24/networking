@@ -154,6 +154,28 @@
         <mxCell id="PBpltQ-XPWgyExFx80Mb-42" value="&lt;div align=&quot;left&quot;&gt;51201 &amp;gt; T3:51201&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-30;" vertex="1" parent="1">
           <mxGeometry x="564" y="259" width="140" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="PBpltQ-XPWgyExFx80Mb-43" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="299" as="sourcePoint" />
+            <mxPoint x="780" y="249" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PBpltQ-XPWgyExFx80Mb-47" value="Telnet" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PBpltQ-XPWgyExFx80Mb-43">
+          <mxGeometry x="-0.22" y="-1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PBpltQ-XPWgyExFx80Mb-45" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="120" as="sourcePoint" />
+            <mxPoint x="710" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PBpltQ-XPWgyExFx80Mb-46" value="SSH" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PBpltQ-XPWgyExFx80Mb-45">
+          <mxGeometry x="-0.4286" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
