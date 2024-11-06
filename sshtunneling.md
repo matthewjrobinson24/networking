@@ -73,7 +73,7 @@ User: net5_student12
 
 Pass: password12
 _________________________________________________________________________________________________________________ 
-pineland$ ssh netX_studentX@{T3_inside_ip} -R NssXX:localhost:22 -NT
+# pineland$ ssh netX_studentX@{T3_inside_ip} -R NssXX:localhost:22 -NT
 
     ssh net5_student12@10.3.0.10 -R  51299:127.0.0.1:22 -NT
 _________________________________________________________________________________________________________________
