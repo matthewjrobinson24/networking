@@ -4,17 +4,14 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="PBpltQ-XPWgyExFx80Mb-1" value="&lt;div&gt;Host: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: &lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-80" y="240" width="120" height="120" as="geometry" />
-        </mxCell>
         <mxCell id="PBpltQ-XPWgyExFx80Mb-2" value="&lt;div&gt;Host: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: &lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="80" y="720" width="120" height="120" as="geometry" />
+          <mxGeometry x="-40" y="880" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="PBpltQ-XPWgyExFx80Mb-3" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-81" y="720" width="120" height="120" as="geometry" />
+          <mxGeometry x="-200" y="880" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="PBpltQ-XPWgyExFx80Mb-6" value="&lt;div&gt;Host: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: &lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="240" y="720" width="120" height="120" as="geometry" />
+          <mxGeometry x="-360" y="880" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="PBpltQ-XPWgyExFx80Mb-7" value="&lt;div&gt;T3&lt;br&gt;&lt;/div&gt;&lt;div&gt;Host: tunnels-training-atropia-pivot&lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: 10.3.0.10/24&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 22&lt;/div&gt;&lt;div&gt;Float: 10.50.27.164&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="600" y="120" width="120" height="120" as="geometry" />
@@ -28,7 +25,7 @@
         <mxCell id="PBpltQ-XPWgyExFx80Mb-10" value="&lt;div&gt;Host: Mohammed&lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: 10.2.0.2&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 21,80&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="760" y="-200" width="120" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="PBpltQ-XPWgyExFx80Mb-11" value="&lt;div&gt;Host: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: 10.2.0.3&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 22,23&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="PBpltQ-XPWgyExFx80Mb-11" value="&lt;div&gt;Host: Atlantica&lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: 10.2.0.3&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 22,23&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="920" y="-200" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="PBpltQ-XPWgyExFx80Mb-12" value="&lt;div&gt;Host: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: 10.2.0.201&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: Closed&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
@@ -91,7 +88,7 @@
             <mxPoint x="750" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PBpltQ-XPWgyExFx80Mb-26" value="&lt;div&gt;Host: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Float: 10.50.28.46&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="PBpltQ-XPWgyExFx80Mb-26" value="&lt;div&gt;Host: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: 192.168.0.10/24&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Float: 10.50.28.46&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="440" y="120" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="PBpltQ-XPWgyExFx80Mb-27" value="&lt;div&gt;Host: Cortina&lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: 10.3.0.1&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 21,80&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
@@ -147,6 +144,57 @@
             <mxPoint x="1440" y="150" as="sourcePoint" />
             <mxPoint x="1490" y="100" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="PBpltQ-XPWgyExFx80Mb-51" value="&lt;div&gt;Host: Mojave&lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: 10.5.0.1&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 21,80&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="280" y="-40" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="PBpltQ-XPWgyExFx80Mb-52" value="&lt;div&gt;Host: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: 10.4.0.1&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 22&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="440" y="-40" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="PBpltQ-XPWgyExFx80Mb-53" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PBpltQ-XPWgyExFx80Mb-52" target="PBpltQ-XPWgyExFx80Mb-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="330" as="sourcePoint" />
+            <mxPoint x="200" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PBpltQ-XPWgyExFx80Mb-54" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="PBpltQ-XPWgyExFx80Mb-51" target="PBpltQ-XPWgyExFx80Mb-52">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="50" y="260" as="sourcePoint" />
+            <mxPoint x="100" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PBpltQ-XPWgyExFx80Mb-55" value="&lt;div&gt;Host: Mojave&lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: 10.5.0.57&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 21&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="120" y="-40" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="PBpltQ-XPWgyExFx80Mb-56" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="PBpltQ-XPWgyExFx80Mb-55" target="PBpltQ-XPWgyExFx80Mb-51">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="240" as="sourcePoint" />
+            <mxPoint x="260" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PBpltQ-XPWgyExFx80Mb-58" value="&lt;div&gt;Host: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: 192.168.0.20&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: &lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="440" y="440" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="PBpltQ-XPWgyExFx80Mb-59" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="PBpltQ-XPWgyExFx80Mb-58" target="PBpltQ-XPWgyExFx80Mb-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="370" as="sourcePoint" />
+            <mxPoint x="490" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PBpltQ-XPWgyExFx80Mb-63" value="&lt;div&gt;Host: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: 192.168.0.30&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: &lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="280" y="440" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="PBpltQ-XPWgyExFx80Mb-64" value="&lt;div&gt;Host: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: 192.168.0.40&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: &lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="120" y="440" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="PBpltQ-XPWgyExFx80Mb-65" value="&lt;div&gt;Host: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: 192.168.0.200&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: &lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="440" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="PBpltQ-XPWgyExFx80Mb-66" value="&lt;div&gt;Host: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: 192.168.0.201&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: &lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="440" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="PBpltQ-XPWgyExFx80Mb-67" value="&lt;div&gt;Host: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Eth0: 192.168.0.254&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: &lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-360" y="440" width="120" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
