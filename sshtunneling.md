@@ -27,7 +27,7 @@ Host Enumeration: HE
 - uname -a
 - ping-sweep
 
-        for i in {1..254}; do (ping -c 1 192.168.1.$i | grep "bytes from" &) ; done
+        for i in {1..254}; do (ping -c 1 X.X.X.$i | grep "bytes from" &) ; done
 _________________________________________________________________________________________________________________
 Local Port Forward: LPF
 
