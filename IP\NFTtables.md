@@ -95,7 +95,32 @@ Once these steps have been completed and tested, go to Pivot and open up a netca
 
     nc -lvp 9003
 ______________________________________________________________________________________________________________________
+NFTable Rule Definitions
 
+NFTable: CCTC
+Family: ip
+
+  Create input and output base chains with:
+  
+  Hooks
+  
+  Priority of 0
+  
+  Policy as Accept
+
+  Allow New and Established traffic to/from via SSH, TELNET, and RDP
+
+  Change your chains to now have a policy of Drop
+
+  Allow ping (ICMP) requests (and reply) to and from the Pivot.
+
+  Allow ports 5050 and 5150 for both udp and tcp traffic to/from
+
+  Allow New and Established traffic to/from via HTTP
+
+Once these steps have been completed and tested, go to Pivot and open up a netcat listener on port 9002 and wait up to 2 minutes for your flag. If you did not successfully accomplish the tasks above, then you will not receive the flag.
+
+    sudo 
 ______________________________________________________________________________________________________________________
 
 ______________________________________________________________________________________________________________________
