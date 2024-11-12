@@ -53,8 +53,8 @@ IPTable Rule Definitions
 
 Once these steps have been completed and tested, go to Pivot and open up a netcat listener on port 9001 and wait up to 2 minutes for your flag. If you did not successfully accomplish the tasks above, then you will not receive the flag.
 
-    sudo iptables -A INPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --dports 22,23,3389 -j ACCEPT
-    sudo iptables -A OUTPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --dports 22,23,3389 -j ACCEPT
+    sudo iptables -A INPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --ports 22,23,3389 -j ACCEPT
+    sudo iptables -A OUTPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --ports 22,23,3389 -j ACCEPT
     sudo iptables -P INPUT DROP
     sudo iptables -P OUTPUT DROP
     sudo iptables -P FORWARD DROP
