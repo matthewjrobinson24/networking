@@ -1,4 +1,4 @@
-student@blue-internet-host-student-12:~$ nmap -T4 -vvvv -p21-23,80 10.50.24.223
+# 1: student@blue-internet-host-student-12:~$ nmap -T4 -vvvv -p21-23,80 10.50.24.223
 
 Starting Nmap 7.70 ( https://nmap.org ) at 2024-11-07 14:25 UTC
 
@@ -12,14 +12,14 @@ PORT   STATE  SERVICE REASON
 23/tcp open   telnet  syn-ack
 80/tcp open   http    syn-ack
 
-student@blue-internet-host-student-12:~$ nc 10.50.24.223 23
+# 2: student@blue-internet-host-student-12:~$ nc 10.50.24.223 23
 ���� ��#��'
 
-student@blue-internet-host-student-12:~$ nc 10.50.24.223 80
+# 3: student@blue-internet-host-student-12:~$ nc 10.50.24.223 80
 adasas
 HTTP/1.1 400 Bad Request
 
-student@blue-internet-host-student-12:~$ wget -r 10.50.24.223
+# 4: student@blue-internet-host-student-12:~$ wget -r 10.50.24.223
 --2024-11-07 14:26:35--  http://10.50.24.223/
 Connecting to 10.50.24.223:80... connected.
 
@@ -38,7 +38,7 @@ student@blue-internet-host-student-12:~$ cat 10.50.24.223/index.html
 <a href="./Rick-http.png">Rick-http.png</a>
 </html>
 
-student@blue-internet-host-student-12:~$ eog 10.50.24.223/Rick-http.png 
+# 5: student@blue-internet-host-student-12:~$ eog 10.50.24.223/Rick-http.png 
 
 student@blue-internet-host-student-12:~$ telnet 10.50.24.223
 Trying 10.50.24.223...
@@ -48,7 +48,7 @@ Debian GNU/Linux 10
 rick login: Rick
 Password: password
 
-Rick@rick:~$ ip a
+# 6: Rick@rick:~$ ip a
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
     inet 127.0.0.1/8 scope host lo
@@ -62,16 +62,16 @@ Rick@rick:~$ ip a
     inet6 fe80::f816:3eff:fe21:b7d6/64 scope link 
        valid_lft forever preferred_lft forever
 
-Rick@rick:~$ ip n
+# 7: Rick@rick:~$ ip n
 10.1.2.18 dev eth0 lladdr fa:16:3e:32:47:85 REACHABLE
 10.1.2.30 dev eth0 lladdr fa:16:3e:6c:4e:10 REACHABLE
 10.1.2.27 dev eth0 lladdr fa:16:3e:8f:1a:3b STALE
 
-Rick@rick:~$ ip r
+# 8: Rick@rick:~$ ip r
 default via 10.1.2.30 dev eth0 
 10.1.2.16/28 dev eth0 proto kernel scope link src 10.1.2.17 
 
-Rick@rick:~$ ss -ntlp
+# 9: Rick@rick:~$ ss -ntlp
 State        Recv-Q       Send-Q               Local Address:Port               Peer Address:Port       
 LISTEN       0            128                        0.0.0.0:22                      0.0.0.0:*          
 LISTEN       0            128                        0.0.0.0:23                      0.0.0.0:*          
@@ -80,7 +80,7 @@ LISTEN       0            128                           [::]:22                 
 LISTEN       0            128                           [::]:80                         [::]:*          
 LISTEN       0            128                              *:21                            *:*          
 
-Rick@rick:~$ for i in {17..30}; do (ping -c 1 10.1.2.$i | grep "bytes from" &) ; done
+# 10: Rick@rick:~$ for i in {17..30}; do (ping -c 1 10.1.2.$i | grep "bytes from" &) ; done
 64 bytes from 10.1.2.17: icmp_seq=1 ttl=64 time=0.016 ms
 64 bytes from 10.1.2.18: icmp_seq=1 ttl=64 time=0.202 ms
 64 bytes from 10.1.2.27: icmp_seq=1 ttl=64 time=1.07 ms
@@ -99,7 +99,7 @@ PING 10.10.0.40 (10.10.0.40) 56(84) bytes of data.
 6 packets transmitted, 6 received, 0% packet loss, time 108ms
 rtt min/avg/max/mdev = 0.408/0.508/0.637/0.074 ms
 
-Rick@rick:~$ ss -antp
+# 11: Rick@rick:~$ ss -antp
 State      Recv-Q  Send-Q   Local Address:Port     Peer Address:Port                                    
 LISTEN     0       128            0.0.0.0:22            0.0.0.0:*                                       
 LISTEN     0       128            0.0.0.0:23            0.0.0.0:*                                       
@@ -108,13 +108,13 @@ LISTEN     0       128               [::]:22               [::]:*
 LISTEN     0       128               [::]:80               [::]:*                                       
 LISTEN     0       128                  *:21                  *:*                                       
 
-Rick@rick:~$ ssh student@10.50.24.152 -R 51299:127.0.0.1:22
+# 12: Rick@rick:~$ ssh student@10.50.24.152 -R 51299:127.0.0.1:22
 Could not create directory '/home/Rick/.ssh'.
 The authenticity of host '10.50.24.152 (10.50.24.152)' can't be established.
 ECDSA key fingerprint is SHA256:Aa3DdURnrDwLwmp2VRuMbghlUL+eAL0FoDLsY6i191Y.
 Are you sure you want to continue connecting (yes/no)? yes^C
 
-Rick@rick:~$ ssh student@10.50.24.152 -R 51299:127.0.0.1:22 -NT
+# 13: Rick@rick:~$ ssh student@10.50.24.152 -R 51299:127.0.0.1:22 -NT
 Could not create directory '/home/Rick/.ssh'.
 The authenticity of host '10.50.24.152 (10.50.24.152)' can't be established.
 ECDSA key fingerprint is SHA256:Aa3DdURnrDwLwmp2VRuMbghlUL+eAL0FoDLsY6i191Y.
@@ -125,7 +125,7 @@ student@10.50.24.152's password:
 
 ________________________________________________________________________________________________________
 
-student@blue-internet-host-student-12:~$ ss -ntlp
+# 1: student@blue-internet-host-student-12:~$ ss -ntlp
 State        Recv-Q       Send-Q              Local Address:Port                Peer Address:Port       
 LISTEN       0            128                       0.0.0.0:80                       0.0.0.0:*          
 LISTEN       0            128                       0.0.0.0:22                       0.0.0.0:*          
@@ -140,10 +140,10 @@ LISTEN       0            128                         [::1]:6010                
 LISTEN       0            2                               *:3389                           *:*          
 LISTEN       0            128                         [::1]:51299                       [::]:*          
 
-student@blue-internet-host-student-12:~$ nc 127.0.0.1 51299
+# 2: student@blue-internet-host-student-12:~$ nc 127.0.0.1 51299
 SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
 
-student@blue-internet-host-student-12:~$ ssh Rick@127.0.0.1 -p 51299
+# 3: student@blue-internet-host-student-12:~$ ssh Rick@127.0.0.1 -p 51299
 The authenticity of host '[127.0.0.1]:51299 ([127.0.0.1]:51299)' can't be established.
 ECDSA key fingerprint is SHA256:UqKHM1OH5cVculumfoYyQiy/VUrZHku8sD6iNCDkvPo.
 Are you sure you want to continue connecting (yes/no)? yes
@@ -161,12 +161,12 @@ Last login: Thu Nov  7 14:35:38 2024 from 127.0.0.1
 
 _________________________________________________________________________________________________________
 
-student@blue-internet-host-student-12:~$ ssh Rick@127.0.0.1 -p 51299 -D 9050 -NT
+# 1: student@blue-internet-host-student-12:~$ ssh Rick@127.0.0.1 -p 51299 -D 9050 -NT
 Rick@127.0.0.1's password:
 
 _________________________________________________________________________________________________________
 
-student@blue-internet-host-student-12:~$ proxychains nmap -Pn -T4 -vvvv -p21-23,80 10.1.2.18,27
+# 1: student@blue-internet-host-student-12:~$ proxychains nmap -Pn -T4 -vvvv -p21-23,80 10.1.2.18,27
 ProxyChains-3.1 (http://proxychains.sf.net)
 Starting Nmap 7.70 ( https://nmap.org ) at 2024-11-07 14:38 UTC
 
@@ -193,19 +193,19 @@ PORT   STATE  SERVICE REASON
 Read data files from: /usr/bin/../share/nmap
 Nmap done: 2 IP addresses (2 hosts up) scanned in 0.11 seconds
 
-proxychains wget -r
+# 2: student@blue-internet-host-student-12:~$ proxychains wget -r
 
-proxychains nmap -Pn -T4 -vvvv -p1024- 10.1.2.18
+# 3: student@blue-internet-host-student-12:~$ proxychains nmap -Pn -T4 -vvvv -p1024- 10.1.2.18
 
 _____________________________________________________________________________________________________
 
 
-student@blue-internet-host-student-12:~$ ssh Rick@127.0.0.1 -p 51299 -L 51200:10.1.2.18:2222 -NT
+# 1: student@blue-internet-host-student-12:~$ ssh Rick@127.0.0.1 -p 51299 -L 51200:10.1.2.18:2222 -NT
 Rick@127.0.0.1's password:
 
 _____________________________________________________________________________________________________
 
-student@blue-internet-host-student-12:~$ nc 127.0.0.1 51200
+# 1: student@blue-internet-host-student-12:~$ nc 127.0.0.1 51200
 SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
 
 student@blue-internet-host-student-12:~$ ssh Morty@127.0.0.1 -p 51200
@@ -219,7 +219,7 @@ Offending ECDSA key in /home/student/.ssh/known_hosts:10
 ECDSA host key for [127.0.0.1]:51200 has changed and you have requested strict checking.
 Host key verification failed.
 
-student@blue-internet-host-student-12:~$ ssh-keygen -f "/home/student/.ssh/known_hosts" -R "[127.0.0.1]:51200"
+# 2: student@blue-internet-host-student-12:~$ ssh-keygen -f "/home/student/.ssh/known_hosts" -R "[127.0.0.1]:51200"
 Host [127.0.0.1]:51200 found: line 10
 /home/student/.ssh/known_hosts updated.
 Original contents retained as /home/student/.ssh/known_hosts.old
@@ -231,7 +231,7 @@ Warning: Permanently added '[127.0.0.1]:51200' (ECDSA) to the list of known host
 Morty@127.0.0.1's password: password
 Linux morty 4.19.0-18-cloud-amd64 #1 SMP Debian 4.19.208-1 (2021-09-29) x86_64
 
-Morty@morty:~$ ip a
+# 3: Morty@morty:~$ ip a
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
     inet 127.0.0.1/8 scope host lo
@@ -251,18 +251,18 @@ Morty@morty:~$ ip a
     inet6 fe80::f816:3eff:fe83:703c/64 scope link 
        valid_lft forever preferred_lft forever
 
-Morty@morty:~$ ip n | grep 172
+# 4: Morty@morty:~$ ip n | grep 172
 172.16.10.121 dev eth1 lladdr fa:16:3e:d4:f9:d7 REACHABLE
 172.16.10.126 dev eth1 lladdr fa:16:3e:db:de:31 STALE
 172.16.10.112 dev eth1 lladdr fa:16:3e:6d:b1:18 STALE
 
-Morty@morty:~$ ip r
+# 5: Morty@morty:~$ ip r
 default via 10.1.2.30 dev eth0 
 default via 172.16.10.126 dev eth1 
 10.1.2.16/28 dev eth0 proto kernel scope link src 10.1.2.18 
 172.16.10.96/27 dev eth1 proto kernel scope link src 172.16.10.120 
 
-Morty@morty:~$ ss -nltp
+# 6: Morty@morty:~$ ss -nltp
 State        Recv-Q       Send-Q               Local Address:Port               Peer Address:Port       
 LISTEN       0            128                        0.0.0.0:2222                    0.0.0.0:*          
 LISTEN       0            128                        0.0.0.0:80                      0.0.0.0:*          
@@ -270,7 +270,7 @@ LISTEN       0            128                           [::]:2222               
 LISTEN       0            128                           [::]:80                         [::]:*          
 LISTEN       0            128                              *:21                            *:*          
 
-Morty@morty:~$ for i in {97..126}; do (ping -c 1 172.16.10.$i | grep "bytes from" &) ; done
+# 7: Morty@morty:~$ for i in {97..126}; do (ping -c 1 172.16.10.$i | grep "bytes from" &) ; done
 64 bytes from 172.16.10.112: icmp_seq=1 ttl=64 time=0.306 ms
 64 bytes from 172.16.10.120: icmp_seq=1 ttl=64 time=0.012 ms
 64 bytes from 172.16.10.121: icmp_seq=1 ttl=64 time=0.261 ms
@@ -278,7 +278,7 @@ Morty@morty:~$ for i in {97..126}; do (ping -c 1 172.16.10.$i | grep "bytes from
 
 ___________________________________________________________________________________________________________
 
-student@blue-internet-host-student-12:~$ ssh Morty@127.0.0.1 -p 51200 -D 9050 -NT
+# 1: student@blue-internet-host-student-12:~$ ssh Morty@127.0.0.1 -p 51200 -D 9050 -NT
 
 ___________________________________________________________________________________________________________
 
@@ -286,7 +286,7 @@ Morty@morty:~$ 64 bytes from 172.16.10.126: icmp_seq=1 ttl=64 time=0.129 ms
 logout
 Connection to 127.0.0.1 closed.
 
-student@blue-internet-host-student-12:~$ nmap -T4 -vvvv -p21-23,80 172.16.10.112,121
+# 1: student@blue-internet-host-student-12:~$ nmap -T4 -vvvv -p21-23,80 172.16.10.112,121
 Starting Nmap 7.70 ( https://nmap.org ) at 2024-11-07 14:55 UTC
 Initiating Ping Scan at 14:55
 Scanning 2 hosts [2 ports/host]
@@ -296,7 +296,7 @@ Nmap scan report for 172.16.10.121 [host down, received no-response]
 Read data files from: /usr/bin/../share/nmap
 Nmap done: 2 IP addresses (0 hosts up) scanned in 2.03 seconds
 
-student@blue-internet-host-student-12:~$ proxychains nmap -T4 -vvvv -p21-23,80 172.16.10.112,121
+# 2: student@blue-internet-host-student-12:~$ proxychains nmap -T4 -vvvv -p21-23,80 172.16.10.112,121
 ProxyChains-3.1 (http://proxychains.sf.net)
 Starting Nmap 7.70 ( https://nmap.org ) at 2024-11-07 14:56 UTC
 
@@ -320,7 +320,7 @@ PORT   STATE  SERVICE REASON
 23/tcp closed telnet  conn-refused
 80/tcp open   http    syn-ack
 
-student@blue-internet-host-student-12:~$ proxychains wget -r 172.16.10.121
+# 3: student@blue-internet-host-student-12:~$ proxychains wget -r 172.16.10.121
 ProxyChains-3.1 (http://proxychains.sf.net)
 --2024-11-07 14:57:28--  http://172.16.10.121/
 Connecting to 172.16.10.121:80... |S-chain|-<>-127.0.0.1:9050-<><>-172.16.10.121:80-<><>-OK
@@ -349,7 +349,7 @@ Saving to: ‘172.16.10.121/Jerry-http.png’
 
 2024-11-07 14:57:28 (2.27 GB/s) - ‘172.16.10.121/Jerry-http.png’ saved [7674/7674]
 
-student@blue-internet-host-student-12:~$ proxychains wget -r ftp://172.16.10.121
+# 4: student@blue-internet-host-student-12:~$ proxychains wget -r ftp://172.16.10.121
 ProxyChains-3.1 (http://proxychains.sf.net)
 --2024-11-07 14:57:34--  ftp://172.16.10.121/
            => ‘172.16.10.121/.listing’
@@ -388,15 +388,15 @@ Length: 170
 
 2024-11-07 14:57:45 (45.1 MB/s) - ‘172.16.10.121/welcome.msg’ saved [170]
 
-student@blue-internet-host-student-12:~$ eom 172.16.10.121/
+# 5: student@blue-internet-host-student-12:~$ eom 172.16.10.121/
 index.html      Jerry-ftp.png   Jerry-http.png  welcome.msg     
 
-student@blue-internet-host-student-12:~$ eom 172.16.10.121/Jerry-
+# 6: student@blue-internet-host-student-12:~$ eom 172.16.10.121/Jerry-
 Jerry-ftp.png   Jerry-http.png  
 
-student@blue-internet-host-student-12:~$ eom 172.16.10.121/*.png
+# 7: student@blue-internet-host-student-12:~$ eom 172.16.10.121/*.png
 
-student@blue-internet-host-student-12:~$ proxychains nmap -Pn -T4 -vvvv -p1024- 172.16.10.121
+# 8: student@blue-internet-host-student-12:~$ proxychains nmap -Pn -T4 -vvvv -p1024- 172.16.10.121
 Completed Connect Scan at 15:00, 43.28s elapsed (64512 total ports)
 Nmap scan report for 172.16.10.121
 Host is up, received user-set (0.00051s latency).
@@ -404,26 +404,26 @@ Host is up, received user-set (0.00051s latency).
 PORT     STATE SERVICE REASON
 2323/tcp open  3d-nfsd syn-ack
 
-student@blue-internet-host-student-12:~$ proxychains nc 172.16.10.121 2323
+# 9: student@blue-internet-host-student-12:~$ proxychains nc 172.16.10.121 2323
 ProxyChains-3.1 (http://proxychains.sf.net)
 |S-chain|-<>-127.0.0.1:9050-<><>-172.16.10.121:2323-<><>-OK
 SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
 
 ___________________________________________________________________________________________________
 
-student@blue-internet-host-student-12:~$ ssh Morty@127.0.0.1 -p 51200 -L 51201:172.16.10.121:2323  -NT
+# 1: student@blue-internet-host-student-12:~$ ssh Morty@127.0.0.1 -p 51200 -L 51201:172.16.10.121:2323  -NT
 Morty@127.0.0.1's password:
 
 ___________________________________________________________________________________________________
 
-student@blue-internet-host-student-12:~$ ssh Jerry@127.0.0.1 -p 51201
+# 1: student@blue-internet-host-student-12:~$ ssh Jerry@127.0.0.1 -p 51201
 The authenticity of host '[127.0.0.1]:51201 ([127.0.0.1]:51201)' can't be established.
 ECDSA key fingerprint is SHA256:pbFNI6EPhuuFDZZm4uVwpqF56PoDPihnZxpbDbw1Ink.
 Are you sure you want to continue connecting (yes/no)? yes
 Warning: Permanently added '[127.0.0.1]:51201' (ECDSA) to the list of known hosts.
 Jerry@127.0.0.1's password: 
 
-Jerry@jerry:~$ ip a
+# 2: Jerry@jerry:~$ ip a
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
     inet 127.0.0.1/8 scope host lo
@@ -443,7 +443,7 @@ Jerry@jerry:~$ ip a
     inet6 fe80::f816:3eff:fe8f:e064/64 scope link 
        valid_lft forever preferred_lft forever
 
-Jerry@jerry:~$ ip neigh | grep fa:16
+# 3: Jerry@jerry:~$ ip neigh | grep fa:16
 172.16.10.112 dev eth0 lladdr fa:16:3e:6d:b1:18 STALE
 192.168.10.69 dev eth1 lladdr fa:16:3e:63:de:f6 STALE
 172.16.10.126 dev eth0 lladdr fa:16:3e:db:de:31 REACHABLE
@@ -453,7 +453,7 @@ Jerry@jerry:~$ ip neigh | grep fa:16
 
 ___________________________________________________________________________________________________
 
-^Cstudent@blue-internet-host-student-12:~$ ssh Jerry@127.0.0.1 -p 51201 -D 9050 -NT
+# 1: ^Cstudent@blue-internet-host-student-12:~$ ssh Jerry@127.0.0.1 -p 51201 -D 9050 -NT
 Jerry@127.0.0.1's password: 
 
 ___________________________________________________________________________________________________
