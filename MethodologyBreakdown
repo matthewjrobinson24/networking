@@ -1,20 +1,6 @@
 student@blue-internet-host-student-12:~$ nmap -T4 -vvvv -p21-23,80 10.50.24.223
 
 Starting Nmap 7.70 ( https://nmap.org ) at 2024-11-07 14:25 UTC
-Initiating Ping Scan at 14:25
-Scanning 10.50.24.223 [2 ports]
-Completed Ping Scan at 14:25, 0.00s elapsed (1 total hosts)
-Initiating Parallel DNS resolution of 1 host. at 14:25
-Completed Parallel DNS resolution of 1 host. at 14:25, 0.00s elapsed
-DNS resolution of 1 IPs took 0.00s. Mode: Async [#: 1, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
-Initiating Connect Scan at 14:25
-Scanning 10.50.24.223 [4 ports]
-Discovered open port 80/tcp on 10.50.24.223
-Discovered open port 23/tcp on 10.50.24.223
-Completed Connect Scan at 14:25, 0.00s elapsed (4 total ports)
-Nmap scan report for 10.50.24.223
-Host is up, received syn-ack (0.00053s latency).
-Scanned at 2024-11-07 14:25:21 UTC for 0s
 
 PORT   STATE  SERVICE REASON
 21/tcp closed ftp     conn-refused
@@ -22,44 +8,16 @@ PORT   STATE  SERVICE REASON
 23/tcp open   telnet  syn-ack
 80/tcp open   http    syn-ack
 
-Read data files from: /usr/bin/../share/nmap
-Nmap done: 1 IP address (1 host up) scanned in 0.03 seconds
-
 student@blue-internet-host-student-12:~$ nc 10.50.24.223 23
 ���� ��#��'
 
 student@blue-internet-host-student-12:~$ nc 10.50.24.223 80
 adasas
 HTTP/1.1 400 Bad Request
-Server: nginx/1.14.2
-Date: Thu, 07 Nov 2024 14:26:02 GMT
-Content-Type: text/html
-Content-Length: 173
-Connection: close
 
-<html>
-<head><title>400 Bad Request</title></head>
-<body bgcolor="white">
-<center><h1>400 Bad Request</h1></center>
-<hr><center>nginx/1.14.2</center>
-</body>
-</html>
 student@blue-internet-host-student-12:~$ wget -r 10.50.24.223
 --2024-11-07 14:26:35--  http://10.50.24.223/
 Connecting to 10.50.24.223:80... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 59 [text/html]
-Saving to: ‘10.50.24.223/index.html’
-
-10.50.24.223/index.html   100%[=====================================>]      59  --.-KB/s    in 0s      
-
-2024-11-07 14:26:35 (24.0 MB/s) - ‘10.50.24.223/index.html’ saved [59/59]
-
-Loading robots.txt; please ignore errors.
---2024-11-07 14:26:35--  http://10.50.24.223/robots.txt
-Reusing existing connection to 10.50.24.223:80.
-HTTP request sent, awaiting response... 404 Not Found
-2024-11-07 14:26:35 ERROR 404: Not Found.
 
 --2024-11-07 14:26:35--  http://10.50.24.223/Rick-http.png
 Reusing existing connection to 10.50.24.223:80.
@@ -71,9 +29,6 @@ Saving to: ‘10.50.24.223/Rick-http.png’
 
 2024-11-07 14:26:35 (1.83 GB/s) - ‘10.50.24.223/Rick-http.png’ saved [5477/5477]
 
-FINISHED --2024-11-07 14:26:35--
-Total wall clock time: 0.003s
-Downloaded: 2 files, 5.4K in 0s (1.01 GB/s)
 student@blue-internet-host-student-12:~$ cat 10.50.24.223/index.html 
 <html>
 <a href="./Rick-http.png">Rick-http.png</a>
@@ -88,15 +43,6 @@ Escape character is '^]'.
 Debian GNU/Linux 10
 rick login: Rick
 Password: password
-Last login: Thu Nov  7 14:27:48 UTC 2024 from 10.50.24.219 on pts/5
-Linux rick 4.19.0-18-cloud-amd64 #1 SMP Debian 4.19.208-1 (2021-09-29) x86_64
-
-The programs included with the Debian GNU/Linux system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
-
-Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by applicable law.
 
 Rick@rick:~$ ip a
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
@@ -114,18 +60,8 @@ Rick@rick:~$ ip a
 
 Rick@rick:~$ ip n
 10.1.2.18 dev eth0 lladdr fa:16:3e:32:47:85 REACHABLE
-10.1.2.22 dev eth0  FAILED
-10.1.2.28 dev eth0  FAILED
-10.1.2.19 dev eth0  FAILED
-10.1.2.25 dev eth0  FAILED
-10.1.2.29 dev eth0  FAILED
-10.1.2.23 dev eth0  FAILED
-10.1.2.26 dev eth0  FAILED
-10.1.2.20 dev eth0  FAILED
 10.1.2.30 dev eth0 lladdr fa:16:3e:6c:4e:10 REACHABLE
 10.1.2.27 dev eth0 lladdr fa:16:3e:8f:1a:3b STALE
-10.1.2.21 dev eth0  FAILED
-10.1.2.24 dev eth0  FAILED
 
 Rick@rick:~$ ip r
 default via 10.1.2.30 dev eth0 
@@ -139,6 +75,7 @@ LISTEN       0            128                        0.0.0.0:80                 
 LISTEN       0            128                           [::]:22                         [::]:*          
 LISTEN       0            128                           [::]:80                         [::]:*          
 LISTEN       0            128                              *:21                            *:*          
+
 Rick@rick:~$ for i in {17..30}; do (ping -c 1 10.1.2.$i | grep "bytes from" &) ; done
 64 bytes from 10.1.2.17: icmp_seq=1 ttl=64 time=0.016 ms
 64 bytes from 10.1.2.18: icmp_seq=1 ttl=64 time=0.202 ms
@@ -179,7 +116,8 @@ The authenticity of host '10.50.24.152 (10.50.24.152)' can't be established.
 ECDSA key fingerprint is SHA256:Aa3DdURnrDwLwmp2VRuMbghlUL+eAL0FoDLsY6i191Y.
 Are you sure you want to continue connecting (yes/no)? yes
 Failed to add the host to the list of known hosts (/home/Rick/.ssh/known_hosts).
-student@10.50.24.152's password: 
+
+student@10.50.24.152's password:
 
 ________________________________________________________________________________________________________
 
@@ -220,29 +158,14 @@ Last login: Thu Nov  7 14:35:38 2024 from 127.0.0.1
 _________________________________________________________________________________________________________
 
 student@blue-internet-host-student-12:~$ ssh Rick@127.0.0.1 -p 51299 -D 9050 -NT
-Rick@127.0.0.1's password: password
+Rick@127.0.0.1's password:
 
 _________________________________________________________________________________________________________
 
 student@blue-internet-host-student-12:~$ proxychains nmap -Pn -T4 -vvvv -p21-23,80 10.1.2.18,27
 ProxyChains-3.1 (http://proxychains.sf.net)
 Starting Nmap 7.70 ( https://nmap.org ) at 2024-11-07 14:38 UTC
-Initiating Parallel DNS resolution of 2 hosts. at 14:38
-Completed Parallel DNS resolution of 2 hosts. at 14:38, 0.00s elapsed
-DNS resolution of 2 IPs took 0.00s. Mode: Async [#: 1, OK: 0, NX: 2, DR: 0, SF: 0, TR: 2, CN: 0]
-Initiating Connect Scan at 14:38
-Scanning 2 hosts [4 ports/host]
-|S-chain|-<>-127.0.0.1:9050-<><>-10.1.2.27:23-<--timeout
-|S-chain|-<>-127.0.0.1:9050-<><>-10.1.2.18:23-<--timeout
-|S-chain|-<>-127.0.0.1:9050-<><>-10.1.2.27:22-<--timeout
-|S-chain|-<>-127.0.0.1:9050-<><>-10.1.2.18:22-<--timeout
-|S-chain|-<>-127.0.0.1:9050-<><>-10.1.2.27:21-<--timeout
-|S-chain|-<>-127.0.0.1:9050-<><>-10.1.2.18:21-<><>-OK
-Discovered open port 21/tcp on 10.1.2.18
-|S-chain|-<>-127.0.0.1:9050-<><>-10.1.2.27:80-<--timeout
-|S-chain|-<>-127.0.0.1:9050-<><>-10.1.2.18:80-<><>-OK
-Discovered open port 80/tcp on 10.1.2.18
-Completed Connect Scan at 14:38, 0.09s elapsed (8 total ports)
+
 Nmap scan report for 10.1.2.18
 Host is up, received user-set (0.00079s latency).
 Scanned at 2024-11-07 14:38:07 UTC for 0s
@@ -274,7 +197,7 @@ ________________________________________________________________________________
 
 
 student@blue-internet-host-student-12:~$ ssh Rick@127.0.0.1 -p 51299 -L 51200:10.1.2.18:2222 -NT
-Rick@127.0.0.1's password: password
+Rick@127.0.0.1's password:
 
 _____________________________________________________________________________________________________
 
