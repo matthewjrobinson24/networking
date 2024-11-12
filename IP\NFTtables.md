@@ -53,28 +53,19 @@ IPTable Rule Definitions
 
 Once these steps have been completed and tested, go to Pivot and open up a netcat listener on port 9001 and wait up to 2 minutes for your flag. If you did not successfully accomplish the tasks above, then you will not receive the flag.
 
-    # Allow SSH, TELNET, and RDP
-    iptables -A INPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --dports 22,23,3389 -j ACCEPT
-    iptables -A OUTPUT -p tcp -m state --state ESTABLISHED -j ACCEPT
-    
-    # Set default policies to DROP
-    iptables -P INPUT DROP
-    iptables -P OUTPUT DROP
-    iptables -P FORWARD DROP
-    
-    # Allow ICMP (ping)
-    iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
-    iptables -A OUTPUT -p icmp --icmp-type echo-reply -j ACCEPT
-    
-    # Allow TCP and UDP on ports 6579 and 4444
-    iptables -A INPUT -p tcp -m multiport --dports 6579,4444 -j ACCEPT
-    iptables -A INPUT -p udp -m multiport --dports 6579,4444 -j ACCEPT
-    iptables -A OUTPUT -p tcp -m multiport --sports 6579,4444 -j ACCEPT
-    iptables -A OUTPUT -p udp -m multiport --sports 6579,4444 -j ACCEPT
-    
-    # Allow HTTP
-    iptables -A INPUT -p tcp -m state --state NEW,ESTABLISHED --dport 80 -j ACCEPT
-    iptables -A OUTPUT -p tcp -m state --state ESTABLISHED -j ACCEPT
+    sudo iptables -A INPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --dports 22,23,3389 -j ACCEPT
+    sudo iptables -A OUTPUT -p tcp -m state --state ESTABLISHED -j ACCEPT
+    sudo iptables -P INPUT DROP
+    sudo iptables -P OUTPUT DROP
+    sudo iptables -P FORWARD DROP
+    sudo iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
+    sudo iptables -A OUTPUT -p icmp --icmp-type echo-reply -j ACCEPT
+    sudo iptables -A INPUT -p tcp -m multiport --dports 6579,4444 -j ACCEPT
+    sudo iptables -A INPUT -p udp -m multiport --dports 6579,4444 -j ACCEPT
+    sudo iptables -A OUTPUT -p tcp -m multiport --sports 6579,4444 -j ACCEPT
+    sudo iptables -A OUTPUT -p udp -m multiport --sports 6579,4444 -j ACCEPT
+    sudo iptables -A INPUT -p tcp -m state --state NEW,ESTABLISHED --dport 80 -j ACCEPT
+    sudo iptables -A OUTPUT -p tcp -m state --state ESTABLISHED -j ACCEPT
 ___________________________________________________________________________________________________________________________________________
 
 ___________________________________________________________________________________________________________________________________________
