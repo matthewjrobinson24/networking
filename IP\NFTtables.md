@@ -62,10 +62,10 @@ Once these steps have been completed and tested, go to Pivot and open up a netca
     sudo iptables -A INPUT -p icmp --icmp-type echo-reply -j ACCEPT
     sudo iptables -A OUTPUT -p icmp --icmp-type echo-request -j ACCEPT
     sudo iptables -A OUTPUT -p icmp --icmp-type echo-reply -j ACCEPT
-    sudo iptables -A INPUT -p tcp -m multiport --dports 6579,4444 -j ACCEPT
-    sudo iptables -A INPUT -p udp -m multiport --dports 6579,4444 -j ACCEPT
-    sudo iptables -A OUTPUT -p tcp -m multiport --sports 6579,4444 -j ACCEPT
-    sudo iptables -A OUTPUT -p udp -m multiport --sports 6579,4444 -j ACCEPT
+    sudo iptables -A INPUT -p tcp -m multiport --ports 6579,4444 -j ACCEPT
+    sudo iptables -A INPUT -p udp -m multiport --ports 6579,4444 -j ACCEPT
+    sudo iptables -A OUTPUT -p tcp -m multiport --ports 6579,4444 -j ACCEPT
+    sudo iptables -A OUTPUT -p udp -m multiport --ports 6579,4444 -j ACCEPT
     sudo iptables -A INPUT -p tcp -m state --state NEW,ESTABLISHED --port 80 -j ACCEPT
     sudo iptables -A OUTPUT -p tcp -m state --state NEW,ESTABLISHED --port 80 -j ACCEPT
     nc -lvp 9001
