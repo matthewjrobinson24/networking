@@ -3,13 +3,19 @@
 Starting Nmap 7.70 ( https://nmap.org ) at 2024-11-07 14:25 UTC
 
 Nmap scan report for 10.50.24.223
+
 Host is up, received user-set (0.00079s latency).
+
 Scanned at 2024-11-07 14:38:07 UTC for 0s
 
 PORT   STATE  SERVICE REASON
+
 21/tcp closed ftp     conn-refused
+
 22/tcp closed ssh     conn-refused
+
 23/tcp open   telnet  syn-ack
+
 80/tcp open   http    syn-ack
 
 # 2: student@blue-internet-host-student-12:~$ nc 10.50.24.223 23
