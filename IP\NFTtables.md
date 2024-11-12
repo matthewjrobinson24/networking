@@ -73,7 +73,25 @@ Once these steps have been completed and tested, go to Pivot and open up a netca
     
     nc -lvp 9001
 ______________________________________________________________________________________________________________________
+IPTable Rule Definitions
 
+  Allow New and Established traffic to/from via SSH, TELNET, and RDP
+
+  Change the Default Policy in the Filter Table for the INPUT, OUTPUT, and FORWARD chains to DROP
+
+  Allow New and Established traffic to/from via HTTP
+
+Once these steps have been completed and tested, go to Pivot and open up a netcat listener on port 9003 and wait up to 2 minutes for your flag. If you did not successfully accomplish the tasks above, then you will not receive the flag.
+
+    sudo iptables -A INPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --ports 22,23,3389 -j ACCEPT
+    sudo iptables -A OUTPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --ports 22,23,3389 -j ACCEPT
+    
+    sudo iptables -P INPUT DROP
+    sudo iptables -P FORWARD DROP
+    sudo iptables -P OUTPUT DROP
+    
+    sudo iptables -A INPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --ports 80 -j ACCEPT
+    sudo iptables -A OUTPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --ports 80 -j ACCEPT
 ______________________________________________________________________________________________________________________
 
 ______________________________________________________________________________________________________________________
