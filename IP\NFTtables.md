@@ -12,7 +12,7 @@ If you did not successfully accomplish the tasks above, then you will not receiv
     sudo iptables -L
     sudo iptables -t nat -A POSTROUTING -o eth0 -s 192.168.1.10 -j SNAT --to-source 172.16.82.106
     nc -lvp 9004
-_______________________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________
 NFTable Rule Definitions
 
 NFTable: NAT
@@ -38,7 +38,7 @@ If you did not successfully accomplish the tasks above, then you will not receiv
     sudo nft add chain ip NAT POSTROUTING {type nat hook postrouting priority 0 \; }
     sudo nft add rule ip NAT POSTROUTING ip saddr 192.168.3.30 oif eth0 masquerade
     nc -lvp 9005
-_______________________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________
 IPTable Rule Definitions
 
   Allow New and Established traffic to/from via SSH, TELNET, and RDP
