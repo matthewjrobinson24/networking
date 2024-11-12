@@ -61,7 +61,7 @@ Once these steps have been completed and tested, go to Pivot and open up a netca
     sudo iptables -P OUTPUT DROP
     
     sudo iptables -A INPUT -p icmp -s 10.10.0.40 -j ACCEPT
-    sudo iptables -A OUTPUT -p icmp -s 10.10.0.40 -j ACCEPT
+    sudo iptables -A OUTPUT -p icmp -d 10.10.0.40 -j ACCEPT
     
     sudo iptables -A INPUT -p tcp -m multiport --ports 6579,4444 -j ACCEPT
     sudo iptables -A INPUT -p udp -m multiport --ports 6579,4444 -j ACCEPT
