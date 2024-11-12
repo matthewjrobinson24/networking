@@ -66,8 +66,8 @@ Once these steps have been completed and tested, go to Pivot and open up a netca
     sudo iptables -A INPUT -p udp -m multiport --ports 6579,4444 -j ACCEPT
     sudo iptables -A OUTPUT -p tcp -m multiport --ports 6579,4444 -j ACCEPT
     sudo iptables -A OUTPUT -p udp -m multiport --ports 6579,4444 -j ACCEPT
-    sudo iptables -A INPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport -p --ports 80 -j ACCEPT
-    sudo iptables -A OUTPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport -p --ports 80 -j ACCEPT
+    sudo iptables -A INPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --ports 80 -j ACCEPT
+    sudo iptables -A OUTPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --ports 80 -j ACCEPT
     nc -lvp 9001
 ______________________________________________________________________________________________________________________
 
