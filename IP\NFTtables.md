@@ -55,19 +55,22 @@ Once these steps have been completed and tested, go to Pivot and open up a netca
 
     sudo iptables -A INPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --ports 22,23,3389 -j ACCEPT
     sudo iptables -A OUTPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --ports 22,23,3389 -j ACCEPT
+    
     sudo iptables -P INPUT DROP
     sudo iptables -P FORWARD DROP
     sudo iptables -P OUTPUT DROP
-    sudo iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
-    sudo iptables -A INPUT -p icmp --icmp-type echo-reply -j ACCEPT
-    sudo iptables -A OUTPUT -p icmp --icmp-type echo-request -j ACCEPT
-    sudo iptables -A OUTPUT -p icmp --icmp-type echo-reply -j ACCEPT
+    
+    sudo iptables -A INPUT -p icmp -s 10.10.0.40 -j ACCEPT
+    sudo iptables -A OUTPUT -p icmp -s 10.10.0.40 -j ACCEPT
+    
     sudo iptables -A INPUT -p tcp -m multiport --ports 6579,4444 -j ACCEPT
     sudo iptables -A INPUT -p udp -m multiport --ports 6579,4444 -j ACCEPT
     sudo iptables -A OUTPUT -p tcp -m multiport --ports 6579,4444 -j ACCEPT
     sudo iptables -A OUTPUT -p udp -m multiport --ports 6579,4444 -j ACCEPT
+    
     sudo iptables -A INPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --ports 80 -j ACCEPT
     sudo iptables -A OUTPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --ports 80 -j ACCEPT
+    
     nc -lvp 9001
 ______________________________________________________________________________________________________________________
 
