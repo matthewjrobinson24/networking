@@ -220,7 +220,7 @@ ECDSA host key for [127.0.0.1]:51200 has changed and you have requested strict c
 Host key verification failed.
 
 student@blue-internet-host-student-12:~$ ssh-keygen -f "/home/student/.ssh/known_hosts" -R "[127.0.0.1]:51200"
-# Host [127.0.0.1]:51200 found: line 10
+Host [127.0.0.1]:51200 found: line 10
 /home/student/.ssh/known_hosts updated.
 Original contents retained as /home/student/.ssh/known_hosts.old
 student@blue-internet-host-student-12:~$ ssh Morty@127.0.0.1 -p 51200
