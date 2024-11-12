@@ -9,9 +9,9 @@ IPTable Rule Definitions
 Once these steps have been completed and tested, go to Pivot and open up a netcat listener on port 9004 and wait up to 2 minutes for your flag. 
 If you did not successfully accomplish the tasks above, then you will not receive the flag.
 
-    $ sudo iptables -L
-    $ sudo iptables -t nat -A POSTROUTING -o eth0 -s 192.168.1.10 -j SNAT --to-source 172.16.82.106
-    $ nc -lvp 9004
+    sudo iptables -L
+    sudo iptables -t nat -A POSTROUTING -o eth0 -s 192.168.1.10 -j SNAT --to-source 172.16.82.106
+    nc -lvp 9004
 ___________________________________________________________________________________________________________________________________________
 NFTable Rule Definitions
 
@@ -33,11 +33,11 @@ Family: ip
 Once these steps have been completed and tested, go to Pivot and open up a netcat listener on port 9005 and wait up to 2 minutes for your flag.
 If you did not successfully accomplish the tasks above, then you will not receive the flag.
 
-    $ sudo nft add table ip NAT
-    $ sudo nft add chain ip NAT PREROUTING {type nat hook prerouting priority 0 \; }
-    $ sudo nft add chain ip NAT POSTROUTING {type nat hook postrouting priority 0 \; }
-    $ sudo nft add rule ip NAT POSTROUTING ip saddr 192.168.3.30 oif eth0 masquerade
-    $ nc -lvp 9005
+    sudo nft add table ip NAT
+    sudo nft add chain ip NAT PREROUTING {type nat hook prerouting priority 0 \; }
+    sudo nft add chain ip NAT POSTROUTING {type nat hook postrouting priority 0 \; }
+    sudo nft add rule ip NAT POSTROUTING ip saddr 192.168.3.30 oif eth0 masquerade
+    nc -lvp 9005
 ___________________________________________________________________________________________________________________________________________
 IPTable Rule Definitions
 
@@ -66,6 +66,7 @@ Once these steps have been completed and tested, go to Pivot and open up a netca
     sudo iptables -A OUTPUT -p udp -m multiport --sports 6579,4444 -j ACCEPT
     sudo iptables -A INPUT -p tcp -m state --state NEW,ESTABLISHED --dport 80 -j ACCEPT
     sudo iptables -A OUTPUT -p tcp -m state --state ESTABLISHED -j ACCEPT
+    nc -lvp 9001
 ___________________________________________________________________________________________________________________________________________
 
 ___________________________________________________________________________________________________________________________________________
