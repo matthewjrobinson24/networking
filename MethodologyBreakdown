@@ -212,12 +212,6 @@ student@blue-internet-host-student-12:~$ ssh Morty@127.0.0.1 -p 51200
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
-Someone could be eavesdropping on you right now (man-in-the-middle attack)!
-It is also possible that a host key has just been changed.
-The fingerprint for the ECDSA key sent by the remote host is
-SHA256:FPiaYsZ8ENnBu27xQplEmUH+sEcLyV+ZfGUpiNfHgzs.
-Please contact your system administrator.
 Add correct host key in /home/student/.ssh/known_hosts to get rid of this message.
 Offending ECDSA key in /home/student/.ssh/known_hosts:10
   remove with:
@@ -236,14 +230,6 @@ Are you sure you want to continue connecting (yes/no)? yes
 Warning: Permanently added '[127.0.0.1]:51200' (ECDSA) to the list of known hosts.
 Morty@127.0.0.1's password: password
 Linux morty 4.19.0-18-cloud-amd64 #1 SMP Debian 4.19.208-1 (2021-09-29) x86_64
-
-The programs included with the Debian GNU/Linux system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
-
-Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by applicable law.
-Last login: Thu Nov  7 14:45:36 2024 from 10.1.2.17
 
 Morty@morty:~$ ip a
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
@@ -313,27 +299,7 @@ Nmap done: 2 IP addresses (0 hosts up) scanned in 2.03 seconds
 student@blue-internet-host-student-12:~$ proxychains nmap -T4 -vvvv -p21-23,80 172.16.10.112,121
 ProxyChains-3.1 (http://proxychains.sf.net)
 Starting Nmap 7.70 ( https://nmap.org ) at 2024-11-07 14:56 UTC
-Initiating Ping Scan at 14:56
-Scanning 2 hosts [2 ports/host]
-|S-chain|-<>-127.0.0.1:9050-<><>-172.16.10.121:80-<><>-OK
-|S-chain|-<>-127.0.0.1:9050-<><>-172.16.10.112:80-<--timeout
-Completed Ping Scan at 14:56, 0.00s elapsed (2 total hosts)
-Initiating Parallel DNS resolution of 2 hosts. at 14:56
-Completed Parallel DNS resolution of 2 hosts. at 14:56, 0.00s elapsed
-DNS resolution of 2 IPs took 0.00s. Mode: Async [#: 1, OK: 0, NX: 2, DR: 0, SF: 0, TR: 2, CN: 0]
-Initiating Connect Scan at 14:56
-Scanning 2 hosts [4 ports/host]
-|S-chain|-<>-127.0.0.1:9050-<><>-172.16.10.121:21-<><>-OK
-Discovered open port 21/tcp on 172.16.10.121
-|S-chain|-<>-127.0.0.1:9050-<><>-172.16.10.112:21-<--timeout
-|S-chain|-<>-127.0.0.1:9050-<><>-172.16.10.121:22-<--timeout
-|S-chain|-<>-127.0.0.1:9050-<><>-172.16.10.112:22-<--timeout
-|S-chain|-<>-127.0.0.1:9050-<><>-172.16.10.121:23-<--timeout
-|S-chain|-<>-127.0.0.1:9050-<><>-172.16.10.112:23-<--timeout
-|S-chain|-<>-127.0.0.1:9050-<><>-172.16.10.121:80-<><>-OK
-Discovered open port 80/tcp on 172.16.10.121
-|S-chain|-<>-127.0.0.1:9050-<><>-172.16.10.112:80-<--timeout
-Completed Connect Scan at 14:56, 0.01s elapsed (8 total ports)
+
 Nmap scan report for 172.16.10.112
 Host is up, received conn-refused (0.0017s latency).
 Scanned at 2024-11-07 14:56:05 UTC for 0s
@@ -353,9 +319,6 @@ PORT   STATE  SERVICE REASON
 22/tcp closed ssh     conn-refused
 23/tcp closed telnet  conn-refused
 80/tcp open   http    syn-ack
-
-Read data files from: /usr/bin/../share/nmap
-Nmap done: 2 IP addresses (2 hosts up) scanned in 0.04 seconds
 
 student@blue-internet-host-student-12:~$ proxychains wget -r 172.16.10.121
 ProxyChains-3.1 (http://proxychains.sf.net)
@@ -385,10 +348,6 @@ Saving to: ‘172.16.10.121/Jerry-http.png’
 172.16.10.121/Jerry-http. 100%[=====================================>]   7.49K  --.-KB/s    in 0s      
 
 2024-11-07 14:57:28 (2.27 GB/s) - ‘172.16.10.121/Jerry-http.png’ saved [7674/7674]
-
-FINISHED --2024-11-07 14:57:28--
-Total wall clock time: 0.005s
-Downloaded: 2 files, 7.6K in 0s (1.27 GB/s)
 
 student@blue-internet-host-student-12:~$ proxychains wget -r ftp://172.16.10.121
 ProxyChains-3.1 (http://proxychains.sf.net)
@@ -429,10 +388,6 @@ Length: 170
 
 2024-11-07 14:57:45 (45.1 MB/s) - ‘172.16.10.121/welcome.msg’ saved [170]
 
-FINISHED --2024-11-07 14:57:45--
-Total wall clock time: 10s
-Downloaded: 2 files, 7.7K in 0.09s (89.7 KB/s)
-
 student@blue-internet-host-student-12:~$ eom 172.16.10.121/
 index.html      Jerry-ftp.png   Jerry-http.png  welcome.msg     
 
@@ -441,20 +396,13 @@ Jerry-ftp.png   Jerry-http.png
 
 student@blue-internet-host-student-12:~$ eom 172.16.10.121/*.png
 
-(eom:3737): EOM-WARNING **: 14:58:10.850: Error loading Eom typelib: Typelib file for namespace 'Eom', version '1.0' not found
-
 student@blue-internet-host-student-12:~$ proxychains nmap -Pn -T4 -vvvv -p1024- 172.16.10.121
 Completed Connect Scan at 15:00, 43.28s elapsed (64512 total ports)
 Nmap scan report for 172.16.10.121
 Host is up, received user-set (0.00051s latency).
-Scanned at 2024-11-07 14:59:35 UTC for 43s
-Not shown: 64511 closed ports
-Reason: 64511 conn-refused
+
 PORT     STATE SERVICE REASON
 2323/tcp open  3d-nfsd syn-ack
-
-Read data files from: /usr/bin/../share/nmap
-Nmap done: 1 IP address (1 host up) scanned in 43.32 seconds
 
 student@blue-internet-host-student-12:~$ proxychains nc 172.16.10.121 2323
 ProxyChains-3.1 (http://proxychains.sf.net)
@@ -464,7 +412,7 @@ SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
 ___________________________________________________________________________________________________
 
 student@blue-internet-host-student-12:~$ ssh Morty@127.0.0.1 -p 51200 -L 51201:172.16.10.121:2323  -NT
-Morty@127.0.0.1's password: password
+Morty@127.0.0.1's password:
 
 ___________________________________________________________________________________________________
 
@@ -474,15 +422,7 @@ ECDSA key fingerprint is SHA256:pbFNI6EPhuuFDZZm4uVwpqF56PoDPihnZxpbDbw1Ink.
 Are you sure you want to continue connecting (yes/no)? yes
 Warning: Permanently added '[127.0.0.1]:51201' (ECDSA) to the list of known hosts.
 Jerry@127.0.0.1's password: 
-Linux jerry 4.19.0-18-cloud-amd64 #1 SMP Debian 4.19.208-1 (2021-09-29) x86_64
 
-The programs included with the Debian GNU/Linux system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
-
-Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by applicable law.
-Last login: Thu Nov  7 14:58:35 2024 from 172.16.10.120
 Jerry@jerry:~$ ip a
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -502,6 +442,7 @@ Jerry@jerry:~$ ip a
        valid_lft forever preferred_lft forever
     inet6 fe80::f816:3eff:fe8f:e064/64 scope link 
        valid_lft forever preferred_lft forever
+
 Jerry@jerry:~$ ip neigh | grep fa:16
 172.16.10.112 dev eth0 lladdr fa:16:3e:6d:b1:18 STALE
 192.168.10.69 dev eth1 lladdr fa:16:3e:63:de:f6 STALE
@@ -516,23 +457,3 @@ ________________________________________________________________________________
 Jerry@127.0.0.1's password: 
 
 ___________________________________________________________________________________________________
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
