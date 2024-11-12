@@ -120,7 +120,7 @@ Family: ip
 
 Once these steps have been completed and tested, go to Pivot and open up a netcat listener on port 9002 and wait up to 2 minutes for your flag. If you did not successfully accomplish the tasks above, then you will not receive the flag.
 
-    sudo 
+    
 ______________________________________________________________________________________________________________________
 
 ______________________________________________________________________________________________________________________
