@@ -33,9 +33,11 @@ Family: ip
 Once these steps have been completed and tested, go to Pivot and open up a netcat listener on port 9005 and wait up to 2 minutes for your flag.
 If you did not successfully accomplish the tasks above, then you will not receive the flag.
 
-    $
-    $
-    $
+    $ sudo iptables -N MY_PREROUTING
+    $ sudo iptables -A MY_PREROUTING -m comment --comment "Base chain for PREROUTING"
+    $ sudo iptables -N MY_POSTROUTING
+    $ sudo iptables -A MY_POSTROUTING -m comment --comment "Base chain for POSTROUTING"
+    $ sudo iptables -t nat -A MY_POSTROUTING -o eth0 -s 192.168.3.30 -j SNAT --to-source 172.16.82.112
 ___________________________________________________________________________________________________________________________________________
 
 ___________________________________________________________________________________________________________________________________________
