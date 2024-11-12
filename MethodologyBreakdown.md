@@ -23,16 +23,22 @@ PORT   STATE  SERVICE REASON
 
 # 3: student@blue-internet-host-student-12:~$ nc 10.50.24.223 80
 adasas
+
 HTTP/1.1 400 Bad Request
 
 # 4: student@blue-internet-host-student-12:~$ wget -r 10.50.24.223
 --2024-11-07 14:26:35--  http://10.50.24.223/
+
 Connecting to 10.50.24.223:80... connected.
 
 --2024-11-07 14:26:35--  http://10.50.24.223/Rick-http.png
+
 Reusing existing connection to 10.50.24.223:80.
+
 HTTP request sent, awaiting response... 200 OK
+
 Length: 5477 (5.3K) [image/png]
+
 Saving to: ‘10.50.24.223/Rick-http.png’
 
 10.50.24.223/Rick-http.pn 100%[=====================================>]   5.35K  --.-KB/s    in 0s      
@@ -40,8 +46,11 @@ Saving to: ‘10.50.24.223/Rick-http.png’
 2024-11-07 14:26:35 (1.83 GB/s) - ‘10.50.24.223/Rick-http.png’ saved [5477/5477]
 
 student@blue-internet-host-student-12:~$ cat 10.50.24.223/index.html 
+
 <html>
+
 <a href="./Rick-http.png">Rick-http.png</a>
+
 </html>
 
 # 5: student@blue-internet-host-student-12:~$ eog 10.50.24.223/Rick-http.png 
