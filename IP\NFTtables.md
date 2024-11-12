@@ -13,7 +13,29 @@ If you did not successfully accomplish the tasks above, then you will not receiv
     $ sudo iptables -t nat -A POSTROUTING -o eth0 -s 192.168.1.10 -j SNAT --to-source 172.16.82.106
     $ nc -lvp 9004
 ___________________________________________________________________________________________________________________________________________
+NFTable Rule Definitions
 
+NFTable: NAT
+Family: ip
+
+  On T2 edit the /proc/sys/net/ipv4/ip_forward file to enable IP Forwarding. Change the value from 0 to 1.
+
+  Create POSTROUTING and PREROUTING base chains with:
+  
+  Hooks
+  
+  Priority of 0
+  
+  No Policy Needed
+
+  Configure POSTROUTING chain to translate T6 IP address to T2 (Create the rule by specifying the Interface information first then Layer 3)
+
+Once these steps have been completed and tested, go to Pivot and open up a netcat listener on port 9005 and wait up to 2 minutes for your flag.
+If you did not successfully accomplish the tasks above, then you will not receive the flag.
+
+    $
+    $
+    $
 ___________________________________________________________________________________________________________________________________________
 
 ___________________________________________________________________________________________________________________________________________
