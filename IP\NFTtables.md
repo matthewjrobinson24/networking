@@ -120,6 +120,8 @@ Family: ip
 
 Once these steps have been completed and tested, go to Pivot and open up a netcat listener on port 9002 and wait up to 2 minutes for your flag. If you did not successfully accomplish the tasks above, then you will not receive the flag.
 
+## Neither worked for me. *
+
 iptables: sudo iptables -L
 
     sudo iptables -A INPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --ports 22,23,3389 -j ACCEPT
@@ -151,18 +153,4 @@ nftables: sudo nft list ruleset
     sudo nft add rule ip CCTC OUTPUT udp dport { 5050, 5150 } accept
     sudo nft add rule ip CCTC INPUT tcp dport { 21-23, 80, 3389 } ct state { new, established } accept
     sudo nft add rule ip CCTC OUTPUT tcp sport { 21-23, 80, 3389 } ct state { new, established }  accept
-______________________________________________________________________________________________________________________
-
-______________________________________________________________________________________________________________________
-
-______________________________________________________________________________________________________________________
-
-______________________________________________________________________________________________________________________
-
-______________________________________________________________________________________________________________________
-
-______________________________________________________________________________________________________________________
-
-______________________________________________________________________________________________________________________
-
 ______________________________________________________________________________________________________________________
