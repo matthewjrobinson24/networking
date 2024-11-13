@@ -285,7 +285,7 @@ ________________________________________________________________________________
 # 1: student@blue-internet-host-student-12:~$ nc 127.0.0.1 51200
 SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2
 
-student@blue-internet-host-student-12:~$ ssh Morty@127.0.0.1 -p 51200
+# 2: student@blue-internet-host-student-12:~$ ssh Morty@127.0.0.1 -p 51200
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
@@ -305,7 +305,7 @@ ECDSA host key for [127.0.0.1]:51200 has changed and you have requested strict c
 
 Host key verification failed.
 
-# 2: student@blue-internet-host-student-12:~$ ssh-keygen -f "/home/student/.ssh/known_hosts" -R "[127.0.0.1]:51200"
+# 3: student@blue-internet-host-student-12:~$ ssh-keygen -f "/home/student/.ssh/known_hosts" -R "[127.0.0.1]:51200"
 Host [127.0.0.1]:51200 found: line 10
 
 /home/student/.ssh/known_hosts updated.
@@ -326,7 +326,7 @@ Morty@127.0.0.1's password:
 
 Linux morty 4.19.0-18-cloud-amd64 #1 SMP Debian 4.19.208-1 (2021-09-29) x86_64
 
-# 3: Morty@morty:~$ ip a
+# 4: Morty@morty:~$ ip a
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
 
    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -363,14 +363,14 @@ Linux morty 4.19.0-18-cloud-amd64 #1 SMP Debian 4.19.208-1 (2021-09-29) x86_64
    
    valid_lft forever preferred_lft forever
 
-# 4: Morty@morty:~$ ip n | grep 172
+# 5: Morty@morty:~$ ip n | grep lladdr
 172.16.10.121 dev eth1 lladdr fa:16:3e:d4:f9:d7 REACHABLE
 
 172.16.10.126 dev eth1 lladdr fa:16:3e:db:de:31 STALE
 
 172.16.10.112 dev eth1 lladdr fa:16:3e:6d:b1:18 STALE
 
-# 5: Morty@morty:~$ ip r
+# 6: Morty@morty:~$ ip r
 default via 10.1.2.30 dev eth0 
 
 default via 172.16.10.126 dev eth1 
@@ -379,7 +379,7 @@ default via 172.16.10.126 dev eth1
 
 172.16.10.96/27 dev eth1 proto kernel scope link src 172.16.10.120 
 
-# 6: Morty@morty:~$ ss -nltp
+# 7: Morty@morty:~$ ss -nltp
 State        Recv-Q       Send-Q               Local Address:Port               Peer Address:Port       
 
 LISTEN       0            128                        0.0.0.0:2222                    0.0.0.0:*          
@@ -392,7 +392,7 @@ LISTEN       0            128                           [::]:80                 
 
 LISTEN       0            128                              *:21                            *:*          
 
-# 7: Morty@morty:~$ for i in {97..126}; do (ping -c 1 172.16.10.$i | grep "bytes from" &) ; done
+# 8: Morty@morty:~$ for i in {97..126}; do (ping -c 1 172.16.10.$i | grep "bytes from" &) ; done
 64 bytes from 172.16.10.112: icmp_seq=1 ttl=64 time=0.306 ms
 
 64 bytes from 172.16.10.120: icmp_seq=1 ttl=64 time=0.012 ms
