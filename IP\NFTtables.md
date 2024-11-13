@@ -130,6 +130,9 @@ Once these steps have been completed and tested, go to Pivot and open up a netca
     
     sudo nft add chain ip CCTC INPUT { \; policy drop \; }
     sudo nft add chain ip CCTC OUTPUT { \; policy drop \; }
+
+    sudo nft add rule ip CCTC INPUT ip saddr 10.10.0.40 icmp type 8 accept
+    sudo nft add rule ip CCTC OUTPUT ip daddr 10.10.0.40 icmp type 0 accept
     
     sudo nft add rule ip CCTC INPUT udp sport { 5050, 5150 } accept
     sudo nft add rule ip CCTC OUTPUT udp dport { 5050, 5150 } accept
