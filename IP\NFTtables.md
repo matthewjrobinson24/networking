@@ -120,22 +120,37 @@ Family: ip
 
 Once these steps have been completed and tested, go to Pivot and open up a netcat listener on port 9002 and wait up to 2 minutes for your flag. If you did not successfully accomplish the tasks above, then you will not receive the flag.
 
+iptables: sudo iptables -L
+
     sudo iptables -A INPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --ports 22,23,3389 -j ACCEPT
     sudo iptables -A OUTPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --ports 22,23,3389 -j ACCEPT
-    
     sudo iptables -P INPUT DROP
     sudo iptables -P FORWARD DROP
     sudo iptables -P OUTPUT DROP
-    
     sudo iptables -A INPUT -p tcp -m multiport --ports 5050,5150 -j ACCEPT
     sudo iptables -A INPUT -p udp -m multiport --ports 5050,5150 -j ACCEPT
     sudo iptables -A OUTPUT -p tcp -m multiport --ports 5050,5150 -j ACCEPT
     sudo iptables -A OUTPUT -p udp -m multiport --ports 5050,5150 -j ACCEPT
-    
     sudo iptables -A INPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --ports 80 -j ACCEPT
     sudo iptables -A OUTPUT -p tcp -m state --state NEW,ESTABLISHED -m multiport --ports 80 -j ACCEPT
-    
-    nc -lvp 9002
+
+nftables: sudo nft list ruleset
+
+    sudo nft add table ip CCTC
+    sudo nft add chain ip CCTC INPUT { type filter hook input priority 0 \; policy accept \;}
+    sudo nft add chain ip CCTC OUTPUT { type filter hook output priority 0 \; policy accept \;}
+    sudo nft add rule ip CCTC INPUT tcp dport { 21-23, 80, 3389 } ct state { new, established } accept
+    sudo nft add rule ip CCTC OUTPUT tcp sport { 21-23, 80, 3389 } ct state { new, established }  accept
+    sudo nft add chain ip CCTC INPUT { \; policy drop \; }
+    sudo nft add chain ip CCTC OUTPUT { \; policy drop \; }
+    sudo nft add rule ip CCTC INPUT ip saddr 10.10.0.40 icmp type 8 accept
+    sudo nft add rule ip CCTC INPUT ip saddr 10.10.0.40 icmp type 0 accept
+    sudo nft add rule ip CCTC OUTPUT ip daddr 10.10.0.40 icmp type 8 accept
+    sudo nft add rule ip CCTC OUTPUT ip daddr 10.10.0.40 icmp type 0 accept
+    sudo nft add rule ip CCTC INPUT udp sport { 5050, 5150 } accept
+    sudo nft add rule ip CCTC OUTPUT udp dport { 5050, 5150 } accept
+    sudo nft add rule ip CCTC INPUT tcp dport { 21-23, 80, 3389 } ct state { new, established } accept
+    sudo nft add rule ip CCTC OUTPUT tcp sport { 21-23, 80, 3389 } ct state { new, established }  accept
 ______________________________________________________________________________________________________________________
 
 ______________________________________________________________________________________________________________________
