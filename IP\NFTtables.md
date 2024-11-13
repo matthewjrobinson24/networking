@@ -125,8 +125,8 @@ Once these steps have been completed and tested, go to Pivot and open up a netca
     sudo nft add table ip CCTC
     sudo nft add chain ip CCTC INPUT { type filter hook input priority 0 \; policy accept \;}
     sudo nft add chain ip CCTC OUTPUT { type filter hook output priority 0 \; policy accept \;}
-    sudo nft add rule ip CCTC INPUT tcp dport { 21-23, 80, 3389 } ct state { new, established } accept
-    sudo nft add rule ip CCTC OUTPUT tcp sport { 21-23, 80, 3389 } ct state { new, established }  accept
+    sudo nft add rule ip CCTC INPUT tcp dport { 22, 23, 80, 3389 } ct state { new, established } accept
+    sudo nft add rule ip CCTC OUTPUT tcp sport { 22, 23, 80, 3389 } ct state { new, established }  accept
     
     sudo nft add chain ip CCTC INPUT { \; policy drop \; }
     sudo nft add chain ip CCTC OUTPUT { \; policy drop \; }
@@ -138,9 +138,6 @@ Once these steps have been completed and tested, go to Pivot and open up a netca
     
     sudo nft add rule ip CCTC INPUT udp sport { 5050, 5150 } accept
     sudo nft add rule ip CCTC OUTPUT udp dport { 5050, 5150 } accept
-    
-    sudo nft add rule ip CCTC INPUT tcp dport { 21-23, 80, 3389 } ct state { new, established } accept
-    sudo nft add rule ip CCTC OUTPUT tcp sport { 21-23, 80, 3389 } ct state { new, established }  accept
     
     nc -lvp 9002
 ______________________________________________________________________________________________________________________
