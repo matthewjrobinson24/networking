@@ -166,16 +166,7 @@ LISTEN     0       128               [::]:80               [::]:*
 
 LISTEN     0       128                  *:21                  *:*                                       
 
-# 13: Rick@rick:~$ ssh student@10.50.24.152 -R 51299:127.0.0.1:22
-Could not create directory '/home/Rick/.ssh'.
-
-The authenticity of host '10.50.24.152 (10.50.24.152)' can't be established.
-
-ECDSA key fingerprint is SHA256:Aa3DdURnrDwLwmp2VRuMbghlUL+eAL0FoDLsY6i191Y.
-
-Are you sure you want to continue connecting (yes/no)? yes^C
-
-# 14: Rick@rick:~$ ssh student@10.50.24.152 -R 51299:127.0.0.1:22 -NT
+# 13: Rick@rick:~$ ssh student@10.50.24.152 -R 51299:127.0.0.1:22 -NT
 Could not create directory '/home/Rick/.ssh'.
 
 The authenticity of host '10.50.24.152 (10.50.24.152)' can't be established.
@@ -229,21 +220,7 @@ Are you sure you want to continue connecting (yes/no)? yes
 
 Warning: Permanently added '[127.0.0.1]:51299' (ECDSA) to the list of known hosts.
 
-Rick@127.0.0.1's password:
-
-Linux rick 4.19.0-18-cloud-amd64 #1 SMP Debian 4.19.208-1 (2021-09-29) x86_64
-
-The programs included with the Debian GNU/Linux system are free software;
-
-the exact distribution terms for each program are described in the
-
-individual files in /usr/share/doc/*/copyright.
-
-Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-
-permitted by applicable law.
-
-Last login: Thu Nov  7 14:35:38 2024 from 127.0.0.1 
+Rick@127.0.0.1's password: 
 
 _________________________________________________________________________________________________________
 
