@@ -45,14 +45,14 @@ An attacker is targeting the host 10.0.0.104 with either a TCP full or half open
 
       MTgK
 ___________________________________________________________________________________________________________
-RAW Sockets are created in ________ space. Specify the one word BASE64 conversion of your answer in ALL CAPS. - 
+RAW Sockets are created in ________ space. Specify the one word BASE64 conversion of your answer in ALL CAPS. - KERNEL
 
-
+    S0VSTkVMCg==
 ___________________________________________________________________________________________________________
 Which module would you need to import to convert data into a corresponding 2-digit hex representation? 
-Specify the module in lowercase and converted to BASE64. - 
+Specify the module in lowercase and converted to BASE64. - binascii
 
-
+    YmluYXNjaWkK
 ___________________________________________________________________________________________________________
 What is the proper format to pro-grammatically pack the IPv4 RAW header? Specify the answer in the proper case. 
 Include only what is between the single or double quotes and not the quotes themselves or the "!". 
@@ -65,7 +65,8 @@ Provide your answer in ALL CAPS and converted to BASE64. -
 
 
 ___________________________________________________________________________________________________________
-
+What type of header does TCP build to perform the checksum function? 
+Provide your answer in ALL CAPS and converted to BASE64. - 
 
 
 ___________________________________________________________________________________________________________
