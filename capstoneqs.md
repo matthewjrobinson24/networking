@@ -17,9 +17,9 @@ An attacker built a FRAME that looks like this: | Destination MAC | Source MAC |
     
 ___________________________________________________________________________________________________________
 A router receives a 5000 byte packet on eth0. The MTU for the outbound interface (eth1) is 1500. What would the fragmentation offset increment be with the conditions below? 
-    Origional packet Size = 5000 bytes 
-        MTU for outboud interface = 1500 
-            Packet IHL = 7
+- Origional packet Size = 5000 bytes 
+- MTU for outboud interface = 1500 
+- Packet IHL = 7
 
 
 
