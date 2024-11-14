@@ -34,9 +34,9 @@ What is the total number of fragmented packets?
       MjcyOQo=
 ___________________________________________________________________________________________________________
 How many packets have the DF flag set and has ONLY the RST and FIN TCP Flags set?
-- Provide the number of packets converted to BASE64. - 
+- Provide the number of packets converted to BASE64. - 109
 
-      ???
+      MTA5Cg==
 ___________________________________________________________________________________________________________
 An attacker is targeting the host 10.0.0.104 with either a TCP full or half open scan. Based off the pcap, how many ports are open?
 - Provide the number of ports converted to BASE64. - 
