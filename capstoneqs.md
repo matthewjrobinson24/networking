@@ -12,9 +12,9 @@ Which type of ARP is sent in order to perform a MitM attack? - GRATUITOUS
 
     R1JBVFVJVE9VUwo=
 ___________________________________________________________________________________________________________
-An attacker built a FRAME that looks like this: | Destination MAC | Source MAC | 0x8100 | 1 | 0x8100 | 100 | 0x0800 | IPv4 Header | TCP Header | Data | FCS | What form of attack is being performed? Supply your 2 word answer in ALL CAPS and convert to BASE64. - ??? ???
+An attacker built a FRAME that looks like this: | Destination MAC | Source MAC | 0x8100 | 1 | 0x8100 | 100 | 0x0800 | IPv4 Header | TCP Header | Data | FCS | What form of attack is being performed? Supply your 2 word answer in ALL CAPS and convert to BASE64. - VLAN HOPPING
 
-    ???
+    VkxBTiBIT1BQSU5HCg==
 ___________________________________________________________________________________________________________
 A router receives a 5000 byte packet on eth0. The MTU for the outbound interface (eth1) is 1500. What would the fragmentation offset increment be with the conditions below? - ???
 - Origional packet Size = 5000 bytes 
