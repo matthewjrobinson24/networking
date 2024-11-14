@@ -16,12 +16,12 @@ An attacker built a FRAME that looks like this: | Destination MAC | Source MAC |
 
     VkxBTiBIT1BQSU5HCg==
 ___________________________________________________________________________________________________________
-A router receives a 5000 byte packet on eth0. The MTU for the outbound interface (eth1) is 1500. What would the fragmentation offset increment be with the conditions below? - ???
+A router receives a 5000 byte packet on eth0. The MTU for the outbound interface (eth1) is 1500. What would the fragmentation offset increment be with the conditions below? - 184
 - Origional packet Size = 5000 bytes 
 - MTU for outboud interface = 1500 
 - Packet IHL = 7
 
-      ???
+      MTg0Cg==
 ___________________________________________________________________________________________________________
 Using BPF’s, determine how many packets with a DSCP of 26 being sent to the host 10.0.0.103.
 - Provide the number of packets converted to BASE64. - 108
@@ -41,7 +41,7 @@ ________________________________________________________________________________
 An attacker is targeting the host 10.0.0.104 with either a TCP full or half open scan. Based off the pcap, how many ports are open?
 - Provide the number of ports converted to BASE64. - 
 
-      ???
+      MTgK
 ___________________________________________________________________________________________________________
 
 
