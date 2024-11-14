@@ -61,9 +61,9 @@ Provide the answer converted to BASE64. - BBHHHBBH4s4s
     QkJISEhCQkg0czRzCg==
 ___________________________________________________________________________________________________________
 What is the default (and most common) encoding used when converting data to be sent over the network. 
-Provide your answer in ALL CAPS and converted to BASE64. - 
+Provide your answer in ALL CAPS and converted to BASE64. - UTF-8
 
-
+    VVRGLTgK
 ___________________________________________________________________________________________________________
 What type of header does TCP build to perform the checksum function? 
 Provide your answer in ALL CAPS and converted to BASE64. - 
