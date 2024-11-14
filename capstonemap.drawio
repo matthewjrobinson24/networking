@@ -16,7 +16,7 @@
         <mxCell id="afbzR2O5z8li9ZHhE41--4" value="&lt;div&gt;HN: capstone-02&lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.1.1.11&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 21,23&lt;br&gt;&lt;/div&gt;&lt;div&gt;web: 1918&lt;/div&gt;&lt;div&gt;pcap in share folder&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="480" y="200" width="160" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="afbzR2O5z8li9ZHhE41--5" value="&lt;div&gt;HN: capstone-03&lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.1.1.25&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 21&lt;/div&gt;&lt;div&gt;web: 791&lt;/div&gt;&lt;div&gt;ftp: student creds&lt;br&gt;&lt;/div&gt;&lt;div&gt;listening tcp/python3 tcp stream sender thru tunnel to say Hi.&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="afbzR2O5z8li9ZHhE41--5" value="&lt;div&gt;HN: capstone-03&lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.1.1.25&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 21&lt;/div&gt;&lt;div&gt;web: 791&lt;/div&gt;&lt;div&gt;ftp: student creds&lt;br&gt;&lt;/div&gt;&lt;div&gt;listening tcp/python3 tcp stream sender thru tunnel to say Hi.&lt;/div&gt;&lt;div&gt;4869&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="720" y="200" width="160" height="160" as="geometry" />
         </mxCell>
         <mxCell id="afbzR2O5z8li9ZHhE41--6" value="&lt;div&gt;HN: capstone-04&lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.1.1.33&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 21,23,80&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
