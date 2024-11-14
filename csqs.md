@@ -12,7 +12,8 @@ Which type of ARP is sent in order to perform a MitM attack? - GRATUITOUS
 
     R1JBVFVJVE9VUwo=
 ___________________________________________________________________________________________________________
-An attacker built a FRAME that looks like this: | Destination MAC | Source MAC | 0x8100 | 1 | 0x8100 | 100 | 0x0800 | IPv4 Header | TCP Header | Data | FCS | What form of attack is being performed? Supply your 2 word answer in ALL CAPS and convert to BASE64. - VLAN HOPPING
+An attacker built a FRAME that looks like this: Destination MAC | Source MAC | 0x8100 | 1 | 0x8100 | 100 | 0x0800 | IPv4 Header | TCP Header | Data | FCS |
+What form of attack is being performed? Supply your 2 word answer in ALL CAPS and convert to BASE64. - VLAN HOPPING
 
     VkxBTiBIT1BQSU5HCg==
 ___________________________________________________________________________________________________________
@@ -43,15 +44,17 @@ An attacker is targeting the host 10.0.0.104 with either a TCP full or half open
 
       MTgK
 ___________________________________________________________________________________________________________
-
-
-
-___________________________________________________________________________________________________________
-
+RAW Sockets are created in ________ space. Specify the one word BASE64 conversion of your answer in ALL CAPS.
 
 
 ___________________________________________________________________________________________________________
+Which module would you need to import to convert data into a corresponding 2-digit hex representation? 
+Specify the module in lowercase and converted to BASE64.
 
+
+___________________________________________________________________________________________________________
+What is the proper format to pro-grammatically pack the IPv4 RAW header? Specify the answer in the proper case. 
+Include only what is between the single or double quotes and not the quotes themselves or the "!". Provide the answer converted to BASE64.
 
 
 ___________________________________________________________________________________________________________
