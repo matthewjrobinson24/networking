@@ -56,9 +56,9 @@ Specify the module in lowercase and converted to BASE64. - binascii
 ___________________________________________________________________________________________________________
 What is the proper format to pro-grammatically pack the IPv4 RAW header? Specify the answer in the proper case. 
 Include only what is between the single or double quotes and not the quotes themselves or the "!". 
-Provide the answer converted to BASE64. - 
+Provide the answer converted to BASE64. - BBHHHBBH4s4s
 
-
+    QkJISEhCQkg0czRzCg==
 ___________________________________________________________________________________________________________
 What is the default (and most common) encoding used when converting data to be sent over the network. 
 Provide your answer in ALL CAPS and converted to BASE64. - 
