@@ -2,42 +2,46 @@
 # echo "CHEESE" | base64
 APIPA uses the IP network range of 169.254.0.0/16. What RFC number governs this? Enter only the BASE64 conversion of the number. - 3927
 
-    MzkyNwo=
+        MzkyNwo=
 ___________________________________________________________________________________________________________
 IPv6 Uses SLAAC to resolve its Global address from the Router. What multicast destination address does it use to Solicit the router? - FF02::2
 
-    RkYwMjo6Mgo=
+        RkYwMjo6Mgo=
 ___________________________________________________________________________________________________________
 Which type of ARP is sent in order to perform a MitM attack? - GRATUITOUS
 
-    R1JBVFVJVE9VUwo=
+        R1JBVFVJVE9VUwo=
 ___________________________________________________________________________________________________________
 An attacker built a FRAME that looks like this: | Destination MAC | Source MAC | 0x8100 | 1 | 0x8100 | 100 | 0x0800 | IPv4 Header | TCP Header | Data | FCS | What form of attack is being performed? Supply your 2 word answer in ALL CAPS and convert to BASE64. - ??? ???
 
-    
+        ???
 ___________________________________________________________________________________________________________
 A router receives a 5000 byte packet on eth0. The MTU for the outbound interface (eth1) is 1500. What would the fragmentation offset increment be with the conditions below? - ???
 - Origional packet Size = 5000 bytes 
 - MTU for outboud interface = 1500 
 - Packet IHL = 7
 
-    
+        ???
 ___________________________________________________________________________________________________________
+Using BPF’s, determine how many packets with a DSCP of 26 being sent to the host 10.0.0.103.
+- Provide the number of packets converted to BASE64.
 
-
-
+        ???
 ___________________________________________________________________________________________________________
+What is the total number of fragmented packets?
+- Provide the number of packets converted to BASE64.
 
-
-
+        ???
 ___________________________________________________________________________________________________________
+How many packets have the DF flag set and has ONLY the RST and FIN TCP Flags set?
+- Provide the number of packets converted to BASE64.
 
-
-
+        ???
 ___________________________________________________________________________________________________________
+An attacker is targeting the host 10.0.0.104 with either a TCP full or half open scan. Based off the pcap, how many ports are open?
+- Provide the number of ports converted to BASE64.
 
-
-
+        ???
 ___________________________________________________________________________________________________________
 
 
