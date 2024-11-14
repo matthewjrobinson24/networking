@@ -17,7 +17,8 @@ What form of attack is being performed? Supply your 2 word answer in ALL CAPS an
 
     VkxBTiBIT1BQSU5HCg==
 ___________________________________________________________________________________________________________
-A router receives a 5000 byte packet on eth0. The MTU for the outbound interface (eth1) is 1500. What would the fragmentation offset increment be with the conditions below? - 184
+A router receives a 5000 byte packet on eth0. The MTU for the outbound interface (eth1) is 1500. 
+What would the fragmentation offset increment be with the conditions below? - 184
 - Origional packet Size = 5000 bytes 
 - MTU for outboud interface = 1500 
 - Packet IHL = 7
@@ -44,21 +45,21 @@ An attacker is targeting the host 10.0.0.104 with either a TCP full or half open
 
       MTgK
 ___________________________________________________________________________________________________________
-RAW Sockets are created in ________ space. Specify the one word BASE64 conversion of your answer in ALL CAPS.
+RAW Sockets are created in ________ space. Specify the one word BASE64 conversion of your answer in ALL CAPS. - 
 
 
 ___________________________________________________________________________________________________________
 Which module would you need to import to convert data into a corresponding 2-digit hex representation? 
-Specify the module in lowercase and converted to BASE64.
+Specify the module in lowercase and converted to BASE64. - 
 
 
 ___________________________________________________________________________________________________________
 What is the proper format to pro-grammatically pack the IPv4 RAW header? Specify the answer in the proper case. 
-Include only what is between the single or double quotes and not the quotes themselves or the "!". Provide the answer converted to BASE64.
+Include only what is between the single or double quotes and not the quotes themselves or the "!". Provide the answer converted to BASE64. - 
 
 
 ___________________________________________________________________________________________________________
-
+What is the default (and most common) encoding used when converting data to be sent over the network. Provide your answer in ALL CAPS and converted to BASE64. - 
 
 
 ___________________________________________________________________________________________________________
