@@ -24,22 +24,22 @@ A router receives a 5000 byte packet on eth0. The MTU for the outbound interface
       ???
 ___________________________________________________________________________________________________________
 Using BPF’s, determine how many packets with a DSCP of 26 being sent to the host 10.0.0.103.
-- Provide the number of packets converted to BASE64.
+- Provide the number of packets converted to BASE64. - 108
 
-      ???
+      MTA4Cg==
 ___________________________________________________________________________________________________________
 What is the total number of fragmented packets?
-- Provide the number of packets converted to BASE64.
+- Provide the number of packets converted to BASE64. - 2729
 
-      ???
+      MjcyOQo=
 ___________________________________________________________________________________________________________
 How many packets have the DF flag set and has ONLY the RST and FIN TCP Flags set?
-- Provide the number of packets converted to BASE64.
+- Provide the number of packets converted to BASE64. - 
 
       ???
 ___________________________________________________________________________________________________________
 An attacker is targeting the host 10.0.0.104 with either a TCP full or half open scan. Based off the pcap, how many ports are open?
-- Provide the number of ports converted to BASE64.
+- Provide the number of ports converted to BASE64. - 
 
       ???
 ___________________________________________________________________________________________________________
