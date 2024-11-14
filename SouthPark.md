@@ -4,7 +4,9 @@ student@blue-internet-host-student-12:~$ nc & wget -r TargetIP Port then cat | e
 _______________________________________________________________________________________________
 student@blue-internet-host-student-12:~$ telnet TargetIP
 _______________________________________________________________________________________________
-Eric@Eric:~$ Host Enumeration
+Eric@Eric:~$ Host Enumeration & Ping Sweep
+    
+    for i in {1..254}; do (ping -c 1 X.X.X.$i | grep "bytes from" &) ; done
 _______________________________________________________________________________________________
 Eric@Eric:~$ ssh student@10.50.24.152 -R 51299:127.0.0.1:8462 -NT
 # |
@@ -28,7 +30,9 @@ student@blue-internet-host-student-12:~$ nc 127.0.0.1 51200
 # |
 student@blue-internet-host-student-12:~$ ssh Kenny@127.0.0.1 -p 51200
 _______________________________________________________________________________________________
-Kenny@kenny:~$ Host Enumeration
+Kenny@kenny:~$ Host Enumeration & Ping Sweep
+
+    for i in {1..254}; do (ping -c 1 X.X.X.$i | grep "bytes from" &) ; done
 _______________________________________________________________________________________________
 # |
 student@blue-internet-host-student-12:~$ ssh Kenny@127.0.0.1 -p 51200 -D 9050 -NT
@@ -48,7 +52,9 @@ student@blue-internet-host-student-12:~$ nc 127.0.0.1 51201
 # |
 student@blue-internet-host-student-12:~$ ssh Kyle@127.0.0.1 -51201
 _______________________________________________________________________________________________
-Kyle@kyle:~$ Host Enumeration
+Kyle@kyle:~$ Host Enumeration & Ping Sweep
+
+    for i in {1..254}; do (ping -c 1 X.X.X.$i | grep "bytes from" &) ; done
 # |
 student@blue-internet-host-student-12:~$ ssh Kyle@127.0.0.1 -p 51201 -D 9050 -NT 
 # |
