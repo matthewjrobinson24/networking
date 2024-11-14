@@ -1,5 +1,4 @@
 # If the question asks you to submit an answer of cheese in all caps converted to base64:
-
 # echo "CHEESE" | base64
 APIPA uses the IP network range of 169.254.0.0/16. What RFC number governs this? Enter only the BASE64 conversion of the number. - 3927
 
