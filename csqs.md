@@ -70,9 +70,9 @@ Provide your answer in ALL CAPS and converted to BASE64. - PSEUDO HEADER
 
     UFNFVURPIEhFQURFUgo=
 ___________________________________________________________________________________________________________
+Follow the guidance from “Hint-03c.png”. Provide the answer converted to BASE64 - Bazinga
 
-
-
+    QmF6aW5nYQo=
 ___________________________________________________________________________________________________________
 
 
