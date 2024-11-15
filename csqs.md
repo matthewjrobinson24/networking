@@ -142,3 +142,48 @@ What is the name of the file uploaded by the attacker?
 Provide the filename exactly as shown and converted to Base64.
 
 -------------------------------------------------------------------------------
+# |
+# |
+# |
+PCAP CAP14
+-------------------------------------------------------------------------------
+
+Question 1:
+
+How many rule files are on the system?
+
+Provide the number converted to Base64 as your answer.
+
+-------------------------------------------------------------------------------
+
+Question 2:
+
+How many of the rules are currently in use to match on traffic?
+
+Provide the number converted to Base64 as your answer.
+
+-------------------------------------------------------------------------------
+
+Question 3:
+
+Which rule will look for someone doing a null scan ?
+
+Provide only the filename as your answer (i.e. ‘file.rules’) and converted to Base64.
+
+-------------------------------------------------------------------------------
+
+Question 4:
+
+What is the exact Alert Message that is being triggered on the system?
+
+Convert the exact message as you see it and convert it to Base64 for your answer.
+
+---------------------------------------------------------------
+
+Question 5:
+
+From what IP is the attack coming from?
+
+Provide your answer in the x.x.x.x format and converted to Base64.
+
+-------------------------------------------------------------------------------
