@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0" version="24.8.6">
   <diagram name="Page-1" id="Zdn-C2N3vjBsEBBfVQxq">
-    <mxGraphModel dx="2212" dy="1895" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1362" dy="1895" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,8 +10,8 @@
         <mxCell id="afbzR2O5z8li9ZHhE41--2" value="&lt;div&gt;HN: capstone-01&lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.1.1.30&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 22,80&lt;br&gt;&lt;/div&gt;&lt;div&gt;Float: 10.50.20.84&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="200" width="160" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="afbzR2O5z8li9ZHhE41--3" value="&lt;div&gt;HN: &lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: &lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-240" y="200" width="160" height="160" as="geometry" />
+        <mxCell id="afbzR2O5z8li9ZHhE41--3" value="&lt;div&gt;HN: &lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.2.2.6&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 23,80&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="440" width="160" height="160" as="geometry" />
         </mxCell>
         <mxCell id="afbzR2O5z8li9ZHhE41--4" value="&lt;div&gt;HN: capstone-02&lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.1.1.11&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 21,23&lt;br&gt;&lt;/div&gt;&lt;div&gt;web: 1918&lt;/div&gt;&lt;div&gt;pcap in share folder&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="480" y="200" width="160" height="160" as="geometry" />
@@ -25,7 +25,7 @@
         <mxCell id="afbzR2O5z8li9ZHhE41--7" value="&lt;div&gt;HN: capstone-05&lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 80&lt;/div&gt;&lt;div&gt;use sniffing tool&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="960" y="-40" width="160" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="afbzR2O5z8li9ZHhE41--8" value="&lt;div&gt;HN: &lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.50.21.126/32&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 80&lt;/div&gt;&lt;div&gt;RIPv2 10.1.1.0/25&lt;/div&gt;&lt;div&gt;sniff port 520&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="afbzR2O5z8li9ZHhE41--8" value="&lt;div&gt;HN: capstone-06&lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.2.2.6/28&lt;br&gt;&lt;/div&gt;&lt;div&gt;Float: 10.50.21.126/32&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 80&lt;/div&gt;&lt;div&gt;RIPv2 10.1.1.0/25&lt;/div&gt;&lt;div&gt;sniff port 520&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="960" y="440" width="160" height="160" as="geometry" />
         </mxCell>
         <mxCell id="afbzR2O5z8li9ZHhE41--10" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="afbzR2O5z8li9ZHhE41--1" target="afbzR2O5z8li9ZHhE41--2">
@@ -63,6 +63,27 @@
             <mxPoint x="890" y="230" as="sourcePoint" />
             <mxPoint x="940" y="180" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="afbzR2O5z8li9ZHhE41--18" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="afbzR2O5z8li9ZHhE41--6" target="afbzR2O5z8li9ZHhE41--7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="870" y="170" as="sourcePoint" />
+            <mxPoint x="920" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="afbzR2O5z8li9ZHhE41--19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="afbzR2O5z8li9ZHhE41--6" target="afbzR2O5z8li9ZHhE41--8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="140" as="sourcePoint" />
+            <mxPoint x="830" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="afbzR2O5z8li9ZHhE41--20" value="&lt;div&gt;HN: &lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.2.2.7&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 23,80&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1440" y="440" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="afbzR2O5z8li9ZHhE41--21" value="&lt;div&gt;HN: &lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: &lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="760" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="afbzR2O5z8li9ZHhE41--22" value="&lt;div&gt;HN: &lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: &lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="760" width="160" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
