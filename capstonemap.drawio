@@ -100,6 +100,24 @@
         <mxCell id="afbzR2O5z8li9ZHhE41--27" value="&lt;div&gt;HN: capstone-10&lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.10.10.182&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 21&lt;/div&gt;&lt;div&gt;504&lt;/div&gt;&lt;div&gt;network analysis pivot&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1920" y="440" width="160" height="160" as="geometry" />
         </mxCell>
+        <mxCell id="afbzR2O5z8li9ZHhE41--29" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="afbzR2O5z8li9ZHhE41--20" target="afbzR2O5z8li9ZHhE41--25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1450" y="700" as="sourcePoint" />
+            <mxPoint x="1500" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="afbzR2O5z8li9ZHhE41--30" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="afbzR2O5z8li9ZHhE41--25" target="afbzR2O5z8li9ZHhE41--26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1650" y="720" as="sourcePoint" />
+            <mxPoint x="1700" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="afbzR2O5z8li9ZHhE41--31" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="afbzR2O5z8li9ZHhE41--26" target="afbzR2O5z8li9ZHhE41--27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1880" y="630" as="sourcePoint" />
+            <mxPoint x="1930" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
