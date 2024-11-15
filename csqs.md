@@ -201,7 +201,7 @@ What is the exact Alert Message that is being triggered on the system?
 
 Convert the exact message as you see it and convert it to Base64 for your answer.
 
-
+Who got that kinda monies to pay that!
 
 ---------------------------------------------------------------
 
@@ -211,6 +211,6 @@ From what IP is the attack coming from?
 
 Provide your answer in the x.x.x.x format and converted to Base64.
 
-
+192.168.10.99
 
 -------------------------------------------------------------------------------
