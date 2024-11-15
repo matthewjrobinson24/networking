@@ -118,8 +118,6 @@ Provide the ip address in the x.x.x.x format and converted to Base64.
 
 10.2.0.2
 
-10.1.0.108
-
 -------------------------------------------------------------------------------
 
 Question 5:
