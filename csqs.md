@@ -86,8 +86,6 @@ Which ip address initiated the attack against the FTP server?
 
 Provide the ip address in the x.x.x.x format and converted to Base64.
 
-10.2.0.2
-
 10.1.0.108
 
 -------------------------------------------------------------------------------
@@ -98,7 +96,7 @@ How many failed attempts to guess the FTP password?
 
 Provide number and converted to Base64.
 
-7
+4
 
 -------------------------------------------------------------------------------
 
