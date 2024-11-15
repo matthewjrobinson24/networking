@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0" version="24.8.6">
   <diagram name="Page-1" id="Zdn-C2N3vjBsEBBfVQxq">
-    <mxGraphModel dx="1282" dy="1736" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1232" dy="1712" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -19,7 +19,7 @@
         <mxCell id="afbzR2O5z8li9ZHhE41--6" value="&lt;div&gt;HN: capstone-04&lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.1.1.33/25&lt;/div&gt;&lt;div&gt;IP: 1.1.1.1/29&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 21,23,80&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="960" y="200" width="160" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="afbzR2O5z8li9ZHhE41--7" value="&lt;div&gt;HN: capstone-05&lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 80&lt;/div&gt;&lt;div&gt;use sniffing tool&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="afbzR2O5z8li9ZHhE41--7" value="&lt;div&gt;HN: capstone-05&lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 80&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="960" y="-40" width="160" height="160" as="geometry" />
         </mxCell>
         <mxCell id="afbzR2O5z8li9ZHhE41--8" value="&lt;div&gt;HN: capstone-06&lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.2.2.6/28&lt;br&gt;&lt;/div&gt;&lt;div&gt;Float: 10.50.21.126/32&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 80&lt;/div&gt;&lt;div&gt;RIPv2 10.1.1.0/25&lt;/div&gt;&lt;div&gt;sniff port 520&lt;/div&gt;&lt;div&gt;alt ssh 7777&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -94,10 +94,10 @@
         <mxCell id="afbzR2O5z8li9ZHhE41--25" value="&lt;div&gt;HN: &lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.10.10.140&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 21&lt;/div&gt;&lt;div&gt;301&lt;br&gt;&lt;/div&gt;&lt;div&gt;network recon pivot&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1440" y="440" width="160" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="afbzR2O5z8li9ZHhE41--26" value="&lt;div&gt;HN: &lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.10.10.167&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 80&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="afbzR2O5z8li9ZHhE41--26" value="&lt;div&gt;HN: &lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.10.10.167&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 80&lt;/div&gt;&lt;div&gt;404&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1680" y="440" width="160" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="afbzR2O5z8li9ZHhE41--27" value="&lt;div&gt;HN: &lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.10.10.182&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 21&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="afbzR2O5z8li9ZHhE41--27" value="&lt;div&gt;HN: &lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.10.10.182&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 21&lt;/div&gt;&lt;div&gt;504&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1920" y="440" width="160" height="160" as="geometry" />
         </mxCell>
       </root>
