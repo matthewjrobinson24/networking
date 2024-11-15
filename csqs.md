@@ -70,6 +70,10 @@ Provide your answer in ALL CAPS and converted to BASE64. - PSEUDO HEADER
 
     UFNFVURPIEhFQURFUgo=
 ___________________________________________________________________________________________________________
+Follow the guidance from “Hint-03c.png”. Provide the answer converted to BASE64 - Bazinga
+
+    QmF6aW5nYQo=
+___________________________________________________________________________________________________________
 # |
 # |
 # |
@@ -138,27 +142,3 @@ What is the name of the file uploaded by the attacker?
 Provide the filename exactly as shown and converted to Base64.
 
 -------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Follow the guidance from “Hint-03c.png”. Provide the answer converted to BASE64 - Bazinga
-
-    QmF6aW5nYQo=
-___________________________________________________________________________________________________________
