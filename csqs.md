@@ -86,6 +86,10 @@ Which ip address initiated the attack against the FTP server?
 
 Provide the ip address in the x.x.x.x format and converted to Base64.
 
+10.2.0.2
+
+10.1.0.108
+
 -------------------------------------------------------------------------------
 
 Question 2:
@@ -94,6 +98,8 @@ How many failed attempts to guess the FTP password?
 
 Provide number and converted to Base64.
 
+7
+
 -------------------------------------------------------------------------------
 
 Question 3:
@@ -101,6 +107,9 @@ Question 3:
 What is the correct FTP password?
 
 Provide the exact password and converted to Base64.
+
+w
+
 -------------------------------------------------------------------------------
 
 Question 4:
@@ -108,6 +117,10 @@ Question 4:
 What is the system IP that was compromised?
 
 Provide the ip address in the x.x.x.x format and converted to Base64.
+
+10.2.0.2
+
+10.1.0.108
 
 -------------------------------------------------------------------------------
 
@@ -117,6 +130,8 @@ What is the FTP version?
 
 Provide the version number only and converted to Base64.
 
+3.0.2
+
 -------------------------------------------------------------------------------
 
 Question 6:
@@ -124,6 +139,8 @@ Question 6:
 What is the name of the file taken by the attacker?
 
 Provide the filename exactly as shown and converted to Base64.
+
+test.txt
 
 -------------------------------------------------------------------------------
 
@@ -133,6 +150,8 @@ What was the message contained within the extracted file?
 
 Provide the message exactly as shown and converted to Base64.
 
+hi
+
 -------------------------------------------------------------------------------
 
 Question 8:
@@ -140,6 +159,8 @@ Question 8:
 What is the name of the file uploaded by the attacker?
 
 Provide the filename exactly as shown and converted to Base64.
+
+company_payroll_2019
 
 -------------------------------------------------------------------------------
 # |
