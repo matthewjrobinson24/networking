@@ -145,6 +145,15 @@
             <mxPoint x="1940" y="620" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="afbzR2O5z8li9ZHhE41--44" value="&lt;div&gt;HN: &lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: &lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1920" y="920" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="afbzR2O5z8li9ZHhE41--45" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1999.57" y="840" as="sourcePoint" />
+            <mxPoint x="1999.57" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
