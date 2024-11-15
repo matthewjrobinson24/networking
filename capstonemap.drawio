@@ -94,10 +94,10 @@
         <mxCell id="afbzR2O5z8li9ZHhE41--25" value="&lt;div&gt;HN: &lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.10.10.140&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 21&lt;/div&gt;&lt;div&gt;301&lt;br&gt;&lt;/div&gt;&lt;div&gt;network recon pivot&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1440" y="440" width="160" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="afbzR2O5z8li9ZHhE41--26" value="&lt;div&gt;HN: &lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.10.10.167&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 80&lt;/div&gt;&lt;div&gt;404&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="afbzR2O5z8li9ZHhE41--26" value="&lt;div&gt;HN: &lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.10.10.167&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 80&lt;/div&gt;&lt;div&gt;404&lt;/div&gt;&lt;div&gt;movement redir pivot&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1680" y="440" width="160" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="afbzR2O5z8li9ZHhE41--27" value="&lt;div&gt;HN: &lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.10.10.182&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 21&lt;/div&gt;&lt;div&gt;504&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="afbzR2O5z8li9ZHhE41--27" value="&lt;div&gt;HN: &lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 10.10.10.182&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 21&lt;/div&gt;&lt;div&gt;504&lt;/div&gt;&lt;div&gt;network analysis pivot&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1920" y="440" width="160" height="160" as="geometry" />
         </mxCell>
       </root>
