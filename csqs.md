@@ -70,6 +70,94 @@ Provide your answer in ALL CAPS and converted to BASE64. - PSEUDO HEADER
 
     UFNFVURPIEhFQURFUgo=
 ___________________________________________________________________________________________________________
+# |
+# |
+# |
+HEX ENCODED CAP13
+-------------------------------------------------------------------------------
+
+Question 1:
+
+Which ip address initiated the attack against the FTP server?
+
+Provide the ip address in the x.x.x.x format and converted to Base64.
+
+-------------------------------------------------------------------------------
+
+Question 2:
+
+How many failed attempts to guess the FTP password?
+
+Provide number and converted to Base64.
+
+-------------------------------------------------------------------------------
+
+Question 3:
+
+What is the correct FTP password?
+
+Provide the exact password and converted to Base64.
+-------------------------------------------------------------------------------
+
+Question 4:
+
+What is the system IP that was compromised?
+
+Provide the ip address in the x.x.x.x format and converted to Base64.
+
+-------------------------------------------------------------------------------
+
+Question 5:
+
+What is the FTP version?
+
+Provide the version number only and converted to Base64.
+
+-------------------------------------------------------------------------------
+
+Question 6:
+
+What is the name of the file taken by the attacker?
+
+Provide the filename exactly as shown and converted to Base64.
+
+-------------------------------------------------------------------------------
+
+Question 7:
+
+What was the message contained within the extracted file?
+
+Provide the message exactly as shown and converted to Base64.
+
+-------------------------------------------------------------------------------
+
+Question 8:
+
+What is the name of the file uploaded by the attacker?
+
+Provide the filename exactly as shown and converted to Base64.
+
+-------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Follow the guidance from “Hint-03c.png”. Provide the answer converted to BASE64 - Bazinga
 
     QmF6aW5nYQo=
