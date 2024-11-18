@@ -5,10 +5,10 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="EGFOrscYvpI5MOXuME6B-2" value="&lt;div&gt;HN: &lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Float: &lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-320" y="200" width="160" height="160" as="geometry" />
+          <mxGeometry x="-200" y="80" width="160" height="160" as="geometry" />
         </mxCell>
         <mxCell id="EGFOrscYvpI5MOXuME6B-4" value="&lt;div&gt;HN: &lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: &lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: &lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-320" y="400" width="160" height="160" as="geometry" />
+          <mxGeometry x="-200" y="320" width="160" height="160" as="geometry" />
         </mxCell>
         <mxCell id="EGFOrscYvpI5MOXuME6B-5" value="&lt;div&gt;HN: Me ;D&lt;br&gt;&lt;/div&gt;&lt;div&gt;IP: 172.16.1.129&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ports: 21,22,23,80&lt;br&gt;&lt;/div&gt;&lt;div&gt;Float: 10.50.20.6&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="40" y="200" width="160" height="160" as="geometry" />
